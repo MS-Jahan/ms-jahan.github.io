@@ -5,7 +5,7 @@ import Header from "./components/Header"
 import About from "./components/About"
 import Resume from "./components/Resume"
 import Services from "./components/Services"
-import Portfolio from "./components/Portfolio"
+//import Portfolio from "./components/Portfolio"
 import Contact from "./components/Contact"
 import Scripts from './components/Scripts'
 import HeaderPlacement from "./components/HeaderPlacement"
@@ -71,9 +71,12 @@ function App() {
           <Route path="/services">
             <Services headerPlacement={HeaderPlacement} />
           </Route>
-          <Route path="/portfolio">
+          {/* <Route path="/portfolio">
             <Portfolio headerPlacement={HeaderPlacement} />
-          </Route>
+          </Route> */}
+          {/* <Route path="/blog">
+            <Portfolio headerPlacement={HeaderPlacement} />
+          </Route> */}
           <Route path="/contact" contactLinks={contactLinks}>
             <Contact contactLinks={contactLinks} headerPlacement={HeaderPlacement} />
           </Route>

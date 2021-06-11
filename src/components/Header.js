@@ -12,10 +12,13 @@ const Header = ({runInHomepageOnly, contactLinks}) => {
     useEffect(() => {
         document.title = 'Sarwar Jahan'
 
-        const myElement = document.querySelector('#profession')
-        init(myElement, { showCursor: false, strings: ['Web Developer', 'App Developer', 'Graphics Designer', 'Linux User', 'Computer Nerd' ] })
+        const myElement = document.querySelector('#profession');
+        init(myElement, { showCursor: false, strings: ['Web Developer', 'App Developer', 'Graphics Designer', 'Linux User', 'Computer Nerd' ] });
     })
     
+    const toBlog = () => {
+        window.location.replace("https://ms-jahan.github.io/blog/");
+    }
 
     return (
         <header id="header">
@@ -41,6 +44,7 @@ const Header = ({runInHomepageOnly, contactLinks}) => {
                         <li><Link className="nav-link" to="/about">About</Link></li>
                         <li><Link className="nav-link" to="/resume">Resume</Link></li>
                         <li><Link className="nav-link" to="/services">Services</Link></li>
+                        <li onClick={toBlog}><Link className="nav-link" to="/blog">Blog</Link></li>
                         {/* <li><Link className="nav-link" to="/portfolio">Portfolio</Link></li> Maybe later! */}
                         <li><Link className="nav-link" to="/contact">Contact</Link></li>
 

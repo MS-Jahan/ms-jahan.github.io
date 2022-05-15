@@ -53,7 +53,10 @@ function App() {
     twitter: "https://twitter.com/MS_Jahan_Sabit",
     github: "https://github.com/MS-Jahan",
     linkedin: "https://www.linkedin.com/in/mdsarwarjahan-sabit/",
-    skype: "https://join.skype.com/invite/pj94atkmP0vi"
+    skype: "https://join.skype.com/invite/pj94atkmP0vi",
+    website: "https://" + document.location.host,
+    fiverr: "https://www.fiverr.com/msjsabit"
+
   }
 
   return (

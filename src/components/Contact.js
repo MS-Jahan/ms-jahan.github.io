@@ -79,11 +79,13 @@ const Contact = ({headerPlacement, contactLinks}) => {
                         <i className="bx bx-share-alt"></i>
                         <h3>Social Profiles</h3>
                         <div className="social-links">
-                        <a href={contactLinks.twitter} className="twitter"><i className="bi bi-twitter"></i></a>
-                        <a href={contactLinks.facebook} className="facebook"><i className="bi bi-facebook"></i></a>
-                        <a href={contactLinks.github} className="github"><i className="bi bi-github"></i></a>
-                        <a href={contactLinks.skype} className="skype"><i className="bi bi-skype"></i></a>
-                        <a href={contactLinks.linkedin} className="linkedin"><i className="bi bi-linkedin"></i></a>
+                        <a href={contactLinks.fiverr} className="website" target="_blank"><i className="bi bi-laptop"></i></a>
+                        <a href={contactLinks.website} className="website" target="_blank"><i className="bi bi-globe"></i></a>
+                        <a href={contactLinks.twitter} className="twitter" target="_blank"><i className="bi bi-twitter"></i></a>
+                        <a href={contactLinks.facebook} className="facebook" target="_blank"><i className="bi bi-facebook"></i></a>
+                        <a href={contactLinks.github} className="github" target="_blank"><i className="bi bi-github"></i></a>
+                        <a href={contactLinks.skype} className="skype" target="_blank"><i className="bi bi-skype"></i></a>
+                        <a href={contactLinks.linkedin} className="linkedin" target="_blank"><i className="bi bi-linkedin"></i></a>
                         </div>
                     </div>
                     </div>
@@ -103,7 +105,11 @@ const Contact = ({headerPlacement, contactLinks}) => {
                     </div>
                     </div>
                 </div>
-
+                
+                <br/>
+                <iframe title='fiverr_affiliate' src="https://www.fiverr.com/gig_widgets?id=U2FsdGVkX19g0PRzc/oowWa/psM+fd1YtFkADpB0dXQBc7AvOHzUeT/JJLFzNwV79Gm0nyMUwqdIadf/y9wG2LmEhdzY9u5Z2yLK3paKER5nPpr3/qd9cBbdXuSBnOM2ptcgeuwcbgFImfQrRkNHEowefZB4Xxp7JKuqtge/pMl21J466GKp/8jcS/byeQ33NdaoJIR5jQo7M1kFVWyhAdyrFqKD7WEBttLczCgTsAPK3UBc/EWnOKrQidmZJzIN+ay/9+1Yjazno7+roUWHSLIvfo8egl2NxT+rnKpv4Maaz40L8WGx2dxmNsXHxKD0ENTIz4Nbm8l1YIuIXPU0sorW9045WU+WHE3udNT57DBlOmMDNyqG37QECIKJj2Iidx6Ou83ZVVuAfgXURy+Z2DVGMiUkC2J3CC8nPiW8+PDjVoh5KtG3bUDSnjtbesdAPdHjjOkU7Zy4OVto11/DbTnFlzjTZcXFE2HJ5Pj0K/RcEnMaddAYLY+emaEPt707Br4/U9PejN7BiqLCKnGLhTG/Vp9y6fhGQW8vtmgkNPc=&affiliate_id=413728&strip_google_tagmanager=true" loading="lazy" data-with-title="true" class="fiverr_nga_frame" frameborder="0" height="350" width="100%" referrerpolicy="no-referrer-when-downgrade" data-mode="specific_gig" onload=" var frame = this; var script = document.createElement('script'); script.addEventListener('load', function() { window.FW_SDK.register(frame); }); script.setAttribute('src', 'https://www.fiverr.com/gig_widgets/sdk'); document.body.appendChild(script); " ></iframe>
+                <br/>
+                
                 <form action="/" method="post" className="telegram-message-form mt-4">
                     <div className="row">
                     <div className="col-md-6 form-group">

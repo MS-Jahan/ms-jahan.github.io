@@ -53,11 +53,13 @@ const Header = ({runInHomepageOnly, contactLinks}) => {
                 </nav>
 
                 <div className="social-links">
-                    <a href={contactLinks.twitter} className="twitter"><i className="bi bi-twitter"></i></a>
-                    <a href={contactLinks.facebook} className="facebook"><i className="bi bi-facebook"></i></a>
-                    <a href={contactLinks.github} className="github"><i className="bi bi-github"></i></a>
-                    <a href={contactLinks.skype} className="skype"><i className="bi bi-skype"></i></a>
-                    <a href={contactLinks.linkedin} className="linkedin"><i className="bi bi-linkedin"></i></a>
+                    <a href={contactLinks.fiverr} className="website" target="_blank"><i className="bi bi-laptop"></i></a>
+                    <a href={contactLinks.website} className="website" target="_blank"><i className="bi bi-globe"></i></a>
+                    <a href={contactLinks.twitter} className="twitter" target="_blank"><i className="bi bi-twitter"></i></a>
+                    <a href={contactLinks.facebook} className="facebook" target="_blank"><i className="bi bi-facebook"></i></a>
+                    <a href={contactLinks.github} className="github" target="_blank"><i className="bi bi-github"></i></a>
+                    <a href={contactLinks.skype} className="skype" target="_blank"><i className="bi bi-skype"></i></a>
+                    <a href={contactLinks.linkedin} className="linkedin" target="_blank"><i className="bi bi-linkedin"></i></a>
                 </div>
 
             </div>

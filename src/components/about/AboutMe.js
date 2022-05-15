@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const AboutMe = () => {
 
@@ -8,17 +9,19 @@ const AboutMe = () => {
         return Math.abs(ageDate.getUTCFullYear() - 1970);
     }
 
-    const birthdate = new Date(2001, 11, 22)
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const birthdate = new Date(2001, 11, 22);
+    // const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     const myinfo = {
-        birthday: birthdate.getDate() + " " + months[birthdate.getMonth()] + ", " + birthdate.getFullYear(),
-        website: "ms-jahan.github.io",
+        // birthday: birthdate.getDate() + " " + months[birthdate.getMonth()] + ", " + birthdate.getFullYear(),
+        website: document.location.host,  //"ms-jahan.github.io",
         phone: "+880 168 626 1785",
         city: "Narsingdi, Dhaka, Bangladesh",
         age: _calculateAge(birthdate),
         degree: "BSc in CSE (Current)",
         email: "ssarwarjahan@gmail.com",
-        freelance: "Available"
+        freelance: "Available",
+        university: "Institute of Science and Technology",
+        university_link: "https://ist.edu.bd/"
 
     }
 
@@ -42,10 +45,11 @@ const AboutMe = () => {
                 <div className="row">
                     <div className="col-lg-6">
                     <ul>
-                        <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>{myinfo.birthday}</span></li>
-                        <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>{myinfo.website}</span></li>
+                        {/* <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{myinfo.age}</span></li> */}
+                        <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span><Link to={{pathname: "https://" + myinfo.website}} target="_blank">{myinfo.website}</Link></span></li>
                         <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>{myinfo.phone}</span></li>
                         <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>{myinfo.city}</span></li>
+                        <li><i className="bi bi-chevron-right"></i> <strong>University:</strong> <span><Link to={{pathname: myinfo.university_link}} target="_blank">{myinfo.university}</Link></span></li>
                     </ul>
                     </div>
                     <div className="col-lg-6">

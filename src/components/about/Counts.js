@@ -12,7 +12,7 @@ const Counts = ({Scripts}) => {
             <div className="col-lg-3 col-md-6">
             <div className="count-box">
                 <i className="bi bi-emoji-smile"></i>
-                <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" className="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" className="purecounter"></span>
                 <p>Happy Clients</p>
             </div>
             </div>
@@ -20,7 +20,7 @@ const Counts = ({Scripts}) => {
             <div className="col-lg-3 col-md-6 mt-5 mt-md-0">
             <div className="count-box">
                 <i className="bi bi-journal-richtext"></i>
-                <span data-purecounter-start="0" data-purecounter-end="36" data-purecounter-duration="1" className="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="40" data-purecounter-duration="1" className="purecounter"></span>
                 <p>Projects</p>
             </div>
             </div>
@@ -28,7 +28,7 @@ const Counts = ({Scripts}) => {
             <div className="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div className="count-box">
                 <i className="bi bi-headset"></i>
-                <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" className="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="3000" data-purecounter-duration="1" className="purecounter"></span>
                 <p>Hours Of Support</p>
             </div>
             </div>

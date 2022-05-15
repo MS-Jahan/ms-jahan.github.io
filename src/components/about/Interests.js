@@ -35,8 +35,8 @@ const Interests = () => {
                 </div>
                 <div className="col-lg-3 col-md-4 mt-4">
                 <div className="icon-box">
-                    <i className="ri-book-fill" style={{color: '#47aeff'}}></i>
-                    <h3>Novels</h3>
+                    <i className="ri-skull-2-fill" style={{color: '#47aeff'}}></i>
+                    <h3>Pentesting</h3>
                 </div>
                 </div>
                 <div className="col-lg-3 col-md-4 mt-4">

@@ -13,7 +13,7 @@ const sendToTelegram = () => {
     var email = document.getElementById("email").value;
     var subject = document.getElementById("subject").value;
     var message = document.getElementById("contact-message").value;
-    var textToSend = "URL: " + window.location.href +
+    var textToSend = "URL: " + window.location.href + "%0A" +
                      "Name: " + name + "%0A" + 
                      "Email: " + email + "%0A" + 
                      "Subject: " + subject + "%0A%0A" + 

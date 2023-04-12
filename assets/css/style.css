@@ -1,6 +1,5 @@
 /**
-* Template Name: Personal
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
+* Template Name: Personal - v4.3.0
 * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -45,12 +44,7 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
@@ -80,8 +74,7 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
-#header h1 a,
-#header h1 a:hover {
+#header h1 a, #header h1 a:hover {
   color: #fff;
   line-height: 1;
   display: inline-block;
@@ -131,16 +124,13 @@ h6 {
   #header h1 {
     font-size: 36px;
   }
-
   #header h2 {
     font-size: 20px;
     line-height: 30px;
   }
-
   #header .social-links {
     margin-top: 15px;
   }
-
   #header .container {
     display: flex;
     flex-direction: column;
@@ -158,8 +148,7 @@ h6 {
   background: rgba(0, 0, 0, 0.9);
 }
 
-#header.header-top .social-links,
-#header.header-top h2 {
+#header.header-top .social-links, #header.header-top h2 {
   display: none;
 }
 
@@ -181,7 +170,6 @@ h6 {
   #header.header-top {
     height: 60px;
   }
-
   #header.header-top h1 {
     font-size: 26px;
   }
@@ -210,12 +198,11 @@ h6 {
   position: relative;
 }
 
-.navbar li+li {
+.navbar li + li {
   margin-left: 30px;
 }
 
-.navbar a,
-.navbar a:focus {
+.navbar a, .navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -228,8 +215,7 @@ h6 {
   transition: 0.3s;
 }
 
-.navbar a i,
-.navbar a:focus i {
+.navbar a i, .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
   margin-left: 5px;
@@ -248,17 +234,12 @@ h6 {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.navbar a:hover:before,
-.navbar li:hover>a:before,
-.navbar .active:before {
+.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
   visibility: visible;
   width: 25px;
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: #fff;
 }
 
@@ -281,7 +262,6 @@ h6 {
   .mobile-nav-toggle {
     display: block;
   }
-
   .navbar ul {
     display: none;
   }
@@ -323,12 +303,11 @@ h6 {
   padding: 12px 20px;
 }
 
-.navbar-mobile li+li {
+.navbar-mobile li + li {
   margin: 0;
 }
 
-.navbar-mobile a,
-.navbar-mobile a:focus {
+.navbar-mobile a {
   font-size: 16px;
   position: relative;
 }
@@ -363,7 +342,6 @@ section .container {
   section {
     top: 120px;
   }
-
   section.section-show {
     top: 80px;
   }
@@ -509,7 +487,7 @@ section .container {
 .skills .progress-bar {
   width: 1px;
   height: 10px;
-  transition: 0.9s;
+  transition: .9s;
   background-color: #18d26e;
 }
 
@@ -546,11 +524,6 @@ section .container {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
-}
-
 .testimonials .testimonial-item {
   box-sizing: content-box;
   min-height: 320px;
@@ -578,8 +551,7 @@ section .container {
   margin: 0 0 0 45px;
 }
 
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
   color: rgba(255, 255, 255, 0.25);
   font-size: 26px;
 }
@@ -701,7 +673,7 @@ section .container {
   height: 64px;
   background: #18d26e;
   border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
+  transition: all .3s ease-out 0s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -716,14 +688,14 @@ section .container {
 
 .services .icon-box .icon::before {
   position: absolute;
-  content: "";
+  content: '';
   left: -8px;
   top: -8px;
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 5px;
-  transition: all 0.3s ease-out 0s;
+  transition: all .3s ease-out 0s;
   transform: translateZ(-1px);
 }
 
@@ -760,8 +732,7 @@ section .container {
   background: #35e888;
 }
 
-.services .icon-box:hover h4 a,
-.services .icon-box:hover p {
+.services .icon-box:hover h4 a, .services .icon-box:hover p {
   color: #fff;
 }
 
@@ -796,8 +767,7 @@ section .container {
   border-radius: 4px;
 }
 
-.portfolio #portfolio-flters li:hover,
-.portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
   background: #18d26e;
 }
 
@@ -964,7 +934,7 @@ section .container {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 

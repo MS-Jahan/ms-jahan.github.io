@@ -21,5 +21,6 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "description": "Sarwar Jahan's Personal Website is a Progressive Web App (PWA) that allows users to access Sarwar Jahan's website on their mobile or desktop devices. The PWA provides a seamless user experience, with features such as offline access, push notifications, and app-like interface. Users can browse Sarwar Jahan's blog posts, view his portfolio, and get in touch with him through the contact form. The PWA is fast, reliable, and accessible, making it easy for users to stay up-to-date with Sarwar Jahan's work and connect with him on the go. [ChatGPT 😉]"
 }

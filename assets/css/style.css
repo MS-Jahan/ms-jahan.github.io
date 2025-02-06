@@ -200,10 +200,14 @@ h6 {
 
 .navbar ul {
   margin: 0;
-  padding: 0;
+  padding: 12px 20px;
   display: flex;
   list-style: none;
   align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  border-radius: 10px;
+  display: inline-flex;
 }
 
 .navbar li {

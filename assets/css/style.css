@@ -996,6 +996,73 @@ section .container {
 }
 
 /*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+.projects .card {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+  height: 100%;
+}
+
+.projects .card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.projects .card-img-top {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  height: 200px;
+  object-fit: cover;
+}
+
+.projects .card-body {
+  padding: 20px;
+}
+
+.projects .card-title {
+  font-weight: 700;
+  font-size: 20px;
+  color: #18d26e;
+  margin-bottom: 15px;
+}
+
+.projects .card-text {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.projects .card-text.text-muted {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.projects .btn-primary {
+  background: #18d26e;
+  border: none;
+  padding: 8px 25px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.projects .btn-primary:hover {
+  background: #15bb62;
+  transform: translateY(-2px);
+}
+
+.projects a {
+  color: #ffffff;
+}
+
+.projects a:hover {
+  color: #1b1b1b;
+  text-decoration: none;
+}
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {

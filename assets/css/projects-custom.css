@@ -1,35 +1,36 @@
-/* Modern Projects Section - Inspired by shadcn/ui and reactbits.dev */
+/* Modern Projects Section - Matching Website Color Scheme */
 
 /* Projects Section Container */
 .projects {
   padding: 60px 0;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: #040404;
   min-height: 100vh;
+  position: relative;
 }
 
 /* Section Title */
 .projects .section-title h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #1a1a2e;
+  color: #fff;
   margin-bottom: 10px;
 }
 
 .projects .section-title p {
   font-size: 1.1rem;
-  color: #6c757d;
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 40px;
 }
 
-/* Projects Controls - Modern Glassmorphism */
+/* Projects Controls - Modern Glassmorphism with Dark Theme */
 .projects-controls {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   padding: 30px;
   margin-bottom: 40px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
 /* Search Container */
@@ -42,30 +43,30 @@
   position: relative;
   display: flex;
   align-items: center;
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 12px;
-  border: 2px solid #e2e8f0;
+  border: 2px solid rgba(255, 255, 255, 0.1);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
 }
 
 .search-wrapper:focus-within {
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+  border-color: #18d26e;
+  box-shadow: 0 0 0 3px rgba(24, 210, 110, 0.2);
   transform: translateY(-1px);
 }
 
 .search-icon {
   position: absolute;
   left: 16px;
-  color: #94a3b8;
+  color: rgba(255, 255, 255, 0.5);
   transition: color 0.3s;
   font-size: 1.1rem;
   z-index: 1;
 }
 
 .search-wrapper:focus-within .search-icon {
-  color: #3b82f6;
+  color: #18d26e;
 }
 
 #projectSearch {
@@ -76,24 +77,25 @@
   background: transparent;
   box-shadow: none !important;
   outline: none;
+  color: #fff;
 }
 
 #projectSearch::placeholder {
-  color: #94a3b8;
+  color: rgba(255, 255, 255, 0.4);
 }
 
 #clearSearch {
   border: none;
   background: transparent;
-  color: #94a3b8;
+  color: rgba(255, 255, 255, 0.5);
   padding: 8px 16px;
   transition: all 0.2s;
   cursor: pointer;
 }
 
 #clearSearch:hover {
-  color: #ef4444;
-  background: rgba(239, 68, 68, 0.1);
+  color: #ff4444;
+  background: rgba(255, 68, 68, 0.1);
 }
 
 /* Filter Section */
@@ -110,16 +112,16 @@
 
 .filter-header strong {
   font-size: 0.95rem;
-  color: #334155;
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 600;
 }
 
 #clearFilters {
   padding: 6px 16px;
   font-size: 0.875rem;
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.7);
   background: transparent;
-  border: 1px solid #e2e8f0;
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   transition: all 0.2s;
   text-decoration: none;
@@ -127,12 +129,12 @@
 }
 
 #clearFilters:hover {
-  background: #f1f5f9;
-  color: #334155;
-  border-color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.05);
+  color: #18d26e;
+  border-color: #18d26e;
 }
 
-/* Category Filters - Modern Pills */
+/* Category Filters - Modern Pills with Green Theme */
 .category-filters {
   display: flex;
   flex-wrap: wrap;
@@ -143,9 +145,9 @@
   padding: 8px 20px;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #475569;
-  background: white;
-  border: 2px solid #e2e8f0;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
   border-radius: 24px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
@@ -161,7 +163,7 @@
   width: 0;
   height: 0;
   border-radius: 50%;
-  background: rgba(59, 130, 246, 0.1);
+  background: rgba(24, 210, 110, 0.1);
   transform: translate(-50%, -50%);
   transition: width 0.6s, height 0.6s;
 }
@@ -172,44 +174,47 @@
 }
 
 .category-filter:hover {
-  border-color: #3b82f6;
-  color: #3b82f6;
+  border-color: #18d26e;
+  color: #18d26e;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+  box-shadow: 0 4px 12px rgba(24, 210, 110, 0.3);
 }
 
 .category-filter.active {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white !important;
+  background: #18d26e;
+  color: #040404 !important;
   border-color: transparent;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 15px rgba(24, 210, 110, 0.5);
+  font-weight: 600;
 }
 
 .category-filter.active:hover {
   transform: translateY(-2px) scale(1.02);
+  background: #35e888;
 }
 
 /* Results Info - Modern Badge */
 .results-info {
   display: inline-block;
   padding: 12px 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #18d26e;
+  color: #040404;
   border-radius: 12px;
   font-size: 0.9rem;
-  font-weight: 500;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(24, 210, 110, 0.4);
   border-left: none;
 }
 
-/* Project Cards - Modern Design */
+/* Project Cards - Modern Design with Dark Theme */
 .projects .card {
-  background: white;
-  border: none;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 16px;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -217,13 +222,14 @@
 
 .projects .card:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  border-color: rgba(24, 210, 110, 0.5);
 }
 
 .projects .card-img-top {
   height: 220px;
   object-fit: cover;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0a0a0a 0%, #18d26e 100%);
   transition: transform 0.4s;
 }
 
@@ -242,18 +248,22 @@
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: 12px;
-  color: #1e293b;
+  color: #fff;
   line-height: 1.4;
 }
 
 .projects .card-text {
   font-size: 0.925rem;
   line-height: 1.7;
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.7);
   margin-bottom: 12px;
 }
 
-/* Category Badges - Colorful */
+.projects .card-text.text-muted {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Category Badges - Green Theme Variations */
 .badge-container {
   display: flex;
   flex-wrap: wrap;
@@ -270,56 +280,62 @@
   letter-spacing: 0.5px;
 }
 
-.badge-creative { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; }
-.badge-expert { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: white; }
-.badge-ai { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: white; }
-.badge-automation { background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); color: white; }
-.badge-web { background: linear-gradient(135deg, #30cfd0 0%, #330867 100%); color: white; }
-.badge-mobile { background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%); color: #333; }
-.badge-bot { background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%); color: #333; }
-.badge-iot { background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); color: #333; }
-.badge-security { background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%); color: white; }
+/* Green theme variations */
+.badge-creative { background: #18d26e; color: #040404; }
+.badge-expert { background: #35e888; color: #040404; }
+.badge-ai { background: #52f0a5; color: #040404; }
+.badge-automation { background: #15b85a; color: #fff; }
+.badge-web { background: #13a052; color: #fff; }
+.badge-mobile { background: #63eda3; color: #040404; }
+.badge-bot { background: #18d26e; color: #040404; }
+.badge-iot { background: #2ee07a; color: #040404; }
+.badge-security { background: #ff6b6b; color: #fff; }
+.badge-uncommon { background: #4df593; color: #040404; }
+.badge-novice { background: rgba(24, 210, 110, 0.3); color: #18d26e; border: 1px solid #18d26e; }
+.badge-in-progress { background: rgba(255, 255, 255, 0.1); color: rgba(255, 255, 255, 0.7); border: 1px solid rgba(255, 255, 255, 0.2); }
 
 .projects .badge:not([class*="badge-"]) {
-  background: #e2e8f0;
-  color: #475569;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
 }
 
-/* Buttons - Modern Style */
+/* Buttons - Green Theme */
 .projects .btn-primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #18d26e;
   border: none;
   padding: 10px 24px;
   font-weight: 600;
   font-size: 0.9rem;
   border-radius: 10px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 15px rgba(24, 210, 110, 0.4);
+  color: #040404;
 }
 
 .projects .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  box-shadow: 0 6px 20px rgba(24, 210, 110, 0.5);
+  background: #35e888;
+  color: #040404;
 }
 
 .projects .btn-outline-secondary {
-  border: 2px solid #e2e8f0;
-  color: #64748b;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
   padding: 10px 16px;
   border-radius: 10px;
   transition: all 0.3s;
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .projects .btn-outline-secondary:hover {
-  background: #f1f5f9;
-  border-color: #cbd5e1;
-  color: #334155;
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #18d26e;
+  color: #18d26e;
   transform: scale(1.05);
 }
 
-/* Pagination - Modern */
+/* Pagination - Green Theme */
 .pagination {
   gap: 8px;
 }
@@ -329,35 +345,35 @@
 }
 
 .pagination .page-link {
-  border: 2px solid #e2e8f0;
-  color: #64748b;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
   padding: 10px 16px;
   border-radius: 10px;
   font-weight: 500;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0 2px;
-  background: white;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .pagination .page-link:hover {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  background: #18d26e;
+  color: #040404;
   border-color: transparent;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+  box-shadow: 0 4px 12px rgba(24, 210, 110, 0.4);
 }
 
 .pagination .page-item.active .page-link {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #18d26e;
   border-color: transparent;
-  color: white;
-  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  color: #040404;
+  box-shadow: 0 4px 15px rgba(24, 210, 110, 0.5);
 }
 
 .pagination .page-item.disabled .page-link {
-  background: #f8fafc;
-  border-color: #e2e8f0;
-  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.3);
   cursor: not-allowed;
 }
 
@@ -366,7 +382,7 @@
   width: 4rem;
   height: 4rem;
   border-width: 4px;
-  color: #667eea;
+  color: #18d26e;
 }
 
 /* Empty State */
@@ -377,30 +393,31 @@
 
 .empty-state i {
   font-size: 4rem;
-  color: #cbd5e1;
+  color: rgba(255, 255, 255, 0.2);
   margin-bottom: 20px;
   display: block;
 }
 
 .empty-state p {
   font-size: 1.1rem;
-  color: #64748b;
+  color: rgba(255, 255, 255, 0.6);
   margin-bottom: 24px;
 }
 
 .empty-state .btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: #18d26e;
   border: none;
   padding: 12px 32px;
   font-weight: 600;
   border-radius: 10px;
-  color: white;
+  color: #040404;
   transition: all 0.3s;
 }
 
 .empty-state .btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 6px 20px rgba(24, 210, 110, 0.5);
+  background: #35e888;
 }
 
 /* Animations */
@@ -517,6 +534,6 @@ html {
 .pagination .page-link:focus,
 #projectSearch:focus,
 #clearSearch:focus {
-  outline: 2px solid #667eea;
+  outline: 2px solid #18d26e;
   outline-offset: 2px;
 }

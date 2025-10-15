@@ -288,7 +288,10 @@ class ProjectsManager {
                             ${categoryBadges}
                         </div>
                         <h5 class="card-title">${project.title}</h5>
-                        <p class="card-text flex-grow-1">${this.truncateText(project.description, 150)}</p>
+                        <p class="card-text flex-grow-1">
+                            <span class="description-truncated">${this.truncateText(project.description, 150)}</span>
+                            <span class="description-full">${project.description}</span>
+                        </p>
                         <p class="card-text">${techBadge}</p>
                         <div class="mt-auto d-flex gap-2">
                             <a href="${buttonUrl}" class="btn btn-primary flex-grow-1" target="_blank">

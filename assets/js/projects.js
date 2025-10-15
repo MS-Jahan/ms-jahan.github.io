@@ -41,43 +41,37 @@ class ProjectsManager {
         const controlsHTML = `
             <div class="projects-controls mb-4">
                 <!-- Search Bar -->
-                <div class="row mb-3">
-                    <div class="col-12">
-                        <div class="input-group">
-                            <span class="input-group-text"><i class="bi bi-search"></i></span>
-                            <input
-                                type="text"
-                                class="form-control"
-                                id="projectSearch"
-                                placeholder="Search projects by name, description, or technology..."
-                                autocomplete="off"
-                            >
-                            <button class="btn btn-outline-secondary" type="button" id="clearSearch">
-                                <i class="bi bi-x-lg"></i>
-                            </button>
-                        </div>
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <i class="bi bi-search search-icon"></i>
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="projectSearch"
+                            placeholder="Search projects by name, description, or technology..."
+                            autocomplete="off"
+                        >
+                        <button type="button" id="clearSearch">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
                     </div>
                 </div>
 
                 <!-- Category Filters -->
-                <div class="row mb-3">
-                    <div class="col-12">
-                        <div class="filter-header mb-2">
-                            <strong>Filter by Category:</strong>
-                            <button class="btn btn-sm btn-link" id="clearFilters">Clear All</button>
-                        </div>
-                        <div class="category-filters" id="categoryFilters">
-                            ${this.renderCategoryButtons()}
-                        </div>
+                <div class="filter-section">
+                    <div class="filter-header">
+                        <strong>Filter by Category:</strong>
+                        <button class="btn btn-sm" id="clearFilters">Clear All</button>
+                    </div>
+                    <div class="category-filters" id="categoryFilters">
+                        ${this.renderCategoryButtons()}
                     </div>
                 </div>
 
                 <!-- Results Info -->
-                <div class="row mb-3">
-                    <div class="col-12">
-                        <div class="results-info">
-                            <span id="resultsCount">Loading...</span>
-                        </div>
+                <div class="text-center">
+                    <div class="results-info">
+                        <span id="resultsCount">Loading...</span>
                     </div>
                 </div>
             </div>
@@ -249,12 +243,14 @@ class ProjectsManager {
 
         if (projectsToShow.length === 0) {
             container.innerHTML = `
-                <div class="col-12 text-center py-5">
-                    <i class="bi bi-inbox" style="font-size: 3rem; color: #ccc;"></i>
-                    <p class="mt-3 text-muted">No projects found matching your criteria.</p>
-                    <button class="btn btn-primary" onclick="projectsManager.clearAllFilters()">
-                        Clear Filters
-                    </button>
+                <div class="col-12">
+                    <div class="empty-state">
+                        <i class="bi bi-inbox"></i>
+                        <p>No projects found matching your criteria.</p>
+                        <button class="btn" onclick="projectsManager.clearAllFilters()">
+                            Clear Filters
+                        </button>
+                    </div>
                 </div>
             `;
             return;
@@ -268,9 +264,11 @@ class ProjectsManager {
         const techBadge = project.technologies ?
             `<small class="text-muted">${project.technologies}</small>` : '';
 
-        const categoryBadges = project.categories.slice(0, 3).map(cat =>
-            `<span class="badge bg-secondary me-1">${cat}</span>`
-        ).join('');
+        // Create category badges with gradient colors
+        const categoryBadges = project.categories.slice(0, 3).map(cat => {
+            const badgeClass = `badge-${cat}`;
+            return `<span class="badge ${badgeClass}">${cat}</span>`;
+        }).join('');
 
         const buttonText = project.demo_url && project.demo_url !== '' ? 'View Demo' : 'View Project';
         const buttonUrl = project.demo_url && project.demo_url !== '' ? project.demo_url : project.github_url;
@@ -286,16 +284,18 @@ class ProjectsManager {
                         onerror="this.src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'"
                     >
                     <div class="card-body d-flex flex-column">
-                        <div class="mb-2">
+                        <div class="badge-container">
                             ${categoryBadges}
                         </div>
                         <h5 class="card-title">${project.title}</h5>
                         <p class="card-text flex-grow-1">${this.truncateText(project.description, 150)}</p>
                         <p class="card-text">${techBadge}</p>
-                        <div class="mt-auto">
-                            <a href="${buttonUrl}" class="btn btn-primary" target="_blank">${buttonText}</a>
+                        <div class="mt-auto d-flex gap-2">
+                            <a href="${buttonUrl}" class="btn btn-primary flex-grow-1" target="_blank">
+                                ${buttonText}
+                            </a>
                             ${project.github_url ?
-                                `<a href="${project.github_url}" class="btn btn-outline-secondary ms-2" target="_blank">
+                                `<a href="${project.github_url}" class="btn btn-outline-secondary" target="_blank" title="View on GitHub">
                                     <i class="bi bi-github"></i>
                                 </a>` : ''}
                         </div>

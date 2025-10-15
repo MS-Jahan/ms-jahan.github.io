@@ -155,25 +155,8 @@
   overflow: hidden;
 }
 
-.category-filter::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 0;
-  height: 0;
-  border-radius: 50%;
-  background: rgba(24, 210, 110, 0.1);
-  transform: translate(-50%, -50%);
-  transition: width 0.6s, height 0.6s;
-}
-
-.category-filter:hover::before {
-  width: 300px;
-  height: 300px;
-}
-
 .category-filter:hover {
+  background: transparent;
   border-color: #18d26e;
   color: #18d26e;
   transform: translateY(-2px);
@@ -261,6 +244,23 @@
 
 .projects .card-text.text-muted {
   color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Description hover effect */
+.projects .card .description-truncated {
+  display: inline;
+}
+
+.projects .card .description-full {
+  display: none;
+}
+
+.projects .card:hover .description-truncated {
+  display: none;
+}
+
+.projects .card:hover .description-full {
+  display: inline;
 }
 
 /* Category Badges - Green Theme Variations */

@@ -7,23 +7,23 @@
     {
       "category": "Frontend",
       "items": [
-        {"name": "HTML", "level": 100},
-        {"name": "CSS", "level": 82},
-        {"name": "JavaScript", "level": 75},
-        {"name": "React", "level": 75},
-        {"name": "Bootstrap", "level": 85},
-        {"name": "Tailwind CSS", "level": 70}
+        {"name": "HTML", "level": 97},
+        {"name": "CSS", "level": 90},
+        {"name": "JavaScript", "level": 89},
+        {"name": "React", "level": 73},
+        {"name": "Bootstrap", "level": 88},
+        {"name": "Tailwind CSS", "level": 80}
       ]
     },
     {
       "category": "Backend",
       "items": [
-        {"name": "Python", "level": 83},
-        {"name": "Django", "level": 78},
+        {"name": "Python", "level": 86},
+        {"name": "Django", "level": 77},
         {"name": "Flask", "level": 80},
-        {"name": "Node.js", "level": 70},
-        {"name": "PHP", "level": 71},
-        {"name": "FastAPI", "level": 72}
+        {"name": "Node.js", "level": 71},
+        {"name": "PHP", "level": 81},
+        {"name": "FastAPI", "level": 57}
       ]
     },
     {
@@ -32,19 +32,18 @@
         {"name": "Flutter", "level": 78},
         {"name": "Dart", "level": 75},
         {"name": "Android (Java/Kotlin)", "level": 74},
-        {"name": "PWA", "level": 92},
+        {"name": "PWA", "level": 90},
         {"name": "Kivy (Python)", "level": 85}
       ]
     },
     {
       "category": "Database & Cloud",
       "items": [
-        {"name": "PostgreSQL", "level": 75},
-        {"name": "MySQL", "level": 80},
-        {"name": "MongoDB", "level": 72},
+        {"name": "PostgreSQL", "level": 57},
+        {"name": "MySQL", "level": 78},
+        {"name": "MongoDB", "level": 66},
         {"name": "SQLite", "level": 85},
-        {"name": "Firebase", "level": 78},
-        {"name": "Redis", "level": 68}
+        {"name": "Firebase", "level": 78}
       ]
     },
     {
@@ -62,40 +61,33 @@
       "category": "Specialized",
       "items": [
         {"name": "Web Scraping", "level": 90},
-        {"name": "Telegram Bots", "level": 95},
+        {"name": "Telegram Bots", "level": 99},
         {"name": "IoT (Arduino/NodeMCU)", "level": 80},
-        {"name": "Automation", "level": 88},
-        {"name": "WordPress/CMS", "level": 82},
-        {"name": "Security & Pentesting", "level": 70}
+        {"name": "Automation", "level": 95},
+        {"name": "WordPress/CMS", "level": 95},
+        {"name": "Security & Pentesting", "level": 50}
       ]
     },
     {
       "category": "AI & Data",
       "items": [
-        {"name": "ChatGPT API Integration", "level": 80},
-        {"name": "Data Analysis (Pandas)", "level": 75},
-        {"name": "Data Visualization", "level": 72},
-        {"name": "Machine Learning Basics", "level": 65},
-        {"name": "NLP", "level": 68}
+        {"name": "ChatGPT API Integration", "level": 95},
+        {"name": "Data Analysis (Pandas)", "level": 40},
+        {"name": "Data Visualization", "level": 40}
       ]
     },
     {
       "category": "Design",
       "items": [
-        {"name": "Photoshop", "level": 89},
-        {"name": "Illustrator", "level": 87},
-        {"name": "UI/UX Design", "level": 75},
-        {"name": "Figma", "level": 70}
+        {"name": "Photoshop", "level": 67},
+        {"name": "Illustrator", "level": 58}
       ]
     },
     {
       "category": "Other",
       "items": [
         {"name": "C/C++ (Competitive Programming)", "level": 51},
-        {"name": "Go", "level": 60},
-        {"name": "TypeScript", "level": 72},
-        {"name": "Problem Solving", "level": 80},
-        {"name": "Project Management", "level": 75}
+        {"name": "Problem Solving (in General)", "level": 90}
       ]
     }
   ]

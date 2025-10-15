@@ -293,6 +293,7 @@
 .badge-uncommon { background: #4df593; color: #040404; }
 .badge-novice { background: rgba(24, 210, 110, 0.3); color: #18d26e; border: 1px solid #18d26e; }
 .badge-in-progress { background: rgba(255, 255, 255, 0.1); color: rgba(255, 255, 255, 0.7); border: 1px solid rgba(255, 255, 255, 0.2); }
+.badge-abandoned { background: #dc3545; color: #fff; }
 
 .projects .badge:not([class*="badge-"]) {
   background: rgba(255, 255, 255, 0.1);

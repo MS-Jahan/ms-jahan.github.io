@@ -3,7 +3,8 @@
     "generated": "2025-10-15T18:11:16.308414",
     "total_projects": 59,
     "source": "MS-Jahan GitHub repositories",
-    "version": "1.0"
+    "version": "1.0",
+    "generated_by": "Claude Code"
   },
   "categories": [
     "ai",
@@ -24,7 +25,7 @@
     {
       "name": "Messenger-Message-Logger",
       "title": "Messenger Message Logger",
-      "description": "Popular Python tool that logs Facebook Messenger messages to prevent data loss from deleted messages. Stores messages locally and optionally forwards copies via Telegram bot for backup, with 19 GitHub stars demonstrating community interest.",
+      "description": "Logs Facebook Messenger messages locally so you don't lose them when someone deletes. Can forward to Telegram for backup.",
       "github_url": "https://github.com/MS-Jahan/Messenger-Message-Logger",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Messenger-Message-Logger",
@@ -51,7 +52,7 @@
     {
       "name": "GreenX",
       "title": "Greenx",
-      "description": "Environmental awareness mobile application created for NASA Space Apps Challenge 2020. Built with Python, Kivy, and KivyMD, the app promotes action against deforestation and climate change through interactive features, weather data integration, and tree plantation tracking.",
+      "description": "Environmental app built for NASA Space Apps Challenge 2020. Tracks tree planting, shows weather data, and encourages action against deforestation.",
       "github_url": "https://github.com/MS-Jahan/GreenX",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/GreenX",
@@ -77,7 +78,7 @@
     {
       "name": "flexinotebook",
       "title": "Flexinotebook",
-      "description": "An innovative note-taking application that seamlessly integrates local markdown notes with GitHub repository exploration. Features sophisticated search algorithms including semantic search using TF-IDF, offline-first architecture with IndexedDB caching, and the ability to browse and edit markdown files directly from GitHub repositories.",
+      "description": "A note-taking app that lets you write markdown locally and browse GitHub repos. Has TF-IDF search and works offline.",
       "github_url": "https://github.com/MS-Jahan/flexinotebook",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/flexinotebook",
@@ -88,6 +89,8 @@
       ],
       "technologies": "JavaScript, TypeScript, Vite",
       "categories": [
+        "private",
+        "in-progress",
         "creative",
         "web",
         "expert",
@@ -113,7 +116,7 @@
     {
       "name": "Digital-Broadcasting-Display",
       "title": "Digital Broadcasting Display",
-      "description": "A professional digital signage and broadcasting platform that combines traditional multimedia playback with innovative mobile live streaming capabilities. Features include queue management with token counters, remote device control, and real-time content updates. Ideal for corporate environments, retail stores, and service centers requiring dynamic display management.",
+      "description": "Digital signage system that shows videos, live streams from your phone camera, and token numbers. Good for stores and service centers.",
       "github_url": "https://github.com/MS-Jahan/Digital-Broadcasting-Display",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Digital-Broadcasting-Display",
@@ -121,7 +124,8 @@
         "Python",
         "HTML",
         "JavaScript",
-        "Flask"
+        "Flask",
+        "in-progress"
       ],
       "technologies": "Python, HTML, JavaScript, Flask",
       "categories": [
@@ -152,7 +156,7 @@
     {
       "name": "DowsTAR",
       "title": "Dowstar",
-      "description": "A comprehensive remote administration tool that enables complete Windows PC control through Telegram bot commands, featuring capabilities like keylogging, screen capture, audio recording, directory tree navigation, and file management. This sophisticated project integrates telepot for Telegram API, pywin32 for Windows system access, and multiple helper modules for advanced functionality. The tool demonstrates expertise in security research, system-level programming, and creating powerful remote access tools with a focus on covert monitoring.",
+      "description": "Remote Windows PC control through Telegram. Does screen capture, keylogging, audio recording, and file management via bot commands.",
       "github_url": "https://github.com/MS-Jahan/DowsTAR",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/DowsTAR",
@@ -178,7 +182,7 @@
     {
       "name": "pyMessToTele",
       "title": "Pymesstotele",
-      "description": "An innovative integration project that connects Facebook Messenger and Telegram, allowing users to receive Messenger notifications in Telegram and reply through a bot interface. Features include inline buttons for quick replies, photo sharing between platforms, contact list display, easy chat switching, and file attachment support. This creative solution addresses the need for managing multiple messaging platforms efficiently, demonstrating advanced bot development with bidirectional communication, session management, and cross-platform integration.",
+      "description": "Bridge between Facebook Messenger and Telegram. Get Messenger notifications in Telegram and reply through the bot.",
       "github_url": "https://github.com/MS-Jahan/pyMessToTele",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/pyMessToTele",
@@ -203,7 +207,7 @@
     {
       "name": "Facebook-Telegram-Discord-Website-Portal",
       "title": "Facebook Telegram Discord Website Portal",
-      "description": "A comprehensive web-based portal that integrates multiple communication platforms (Facebook, Telegram, Discord) into a unified interface, consisting of 61 PHP files, 20 images, and 17 JSON configuration files. This ambitious project creates a centralized hub for managing messages, groups, and interactions across different social media platforms. The large codebase (178 total files) indicates a feature-rich application demonstrating advanced web development, API integration, and multi-platform communication management.",
+      "description": "Web portal that combines Facebook, Telegram, and Discord into one interface. Manage messages and interactions across all platforms from one place.",
       "github_url": "https://github.com/MS-Jahan/Facebook-Telegram-Discord-Website-Portal",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Facebook-Telegram-Discord-Website-Portal",
@@ -231,7 +235,7 @@
     {
       "name": "Bangla-AI-Voice-Assistant",
       "title": "Bangla Ai Voice Assistant",
-      "description": "AI-powered voice assistant supporting Bengali language commands and responses. Implements speech recognition and natural language processing for Bengali, enabling voice-controlled interactions and task automation in native language.",
+      "description": "Voice assistant that works in Bengali. Speech recognition and NLP for voice-controlled tasks in native language.",
       "github_url": "https://github.com/MS-Jahan/Bangla-AI-Voice-Assistant",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Bangla-AI-Voice-Assistant",
@@ -240,6 +244,7 @@
       ],
       "technologies": "Python",
       "categories": [
+        "abandoned",
         "ai",
         "automation",
         "creative",
@@ -258,7 +263,7 @@
     {
       "name": "bug-hunt-2024-account-takeover-report-and-poc",
       "title": "Bug Hunt 2024 Account Takeover Report And Poc",
-      "description": "A comprehensive security research report documenting a critical account takeover vulnerability discovered during Bug Hunt 2024 competition. Contains detailed proof-of-concept code, step-by-step exploitation guide, impact analysis, and recommended security fixes. Demonstrates expertise in web application security and responsible disclosure.",
+      "description": "Security research report from Bug Hunt 2024. Documents an account takeover vulnerability with proof-of-concept and how to fix it.",
       "github_url": "https://github.com/MS-Jahan/bug-hunt-2024-account-takeover-report-and-poc",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/bug-hunt-2024-account-takeover-report-and-poc",
@@ -270,7 +275,8 @@
       "categories": [
         "security",
         "creative",
-        "expert"
+        "expert",
+        "documentation"
       ],
       "creativity_score": 8,
       "stars": 1,
@@ -290,7 +296,7 @@
     {
       "name": "Prayer-Times-PWA",
       "title": "Prayer Times Pwa",
-      "description": "Progressive Web App displaying Islamic prayer times based on user location. Provides accurate prayer schedules, offline functionality, and notifications for prayer reminders with clean, responsive interface design.",
+      "description": "PWA that shows Islamic prayer times based on your location. Works offline and sends prayer reminders.",
       "github_url": "https://github.com/MS-Jahan/Prayer-Times-PWA",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Prayer-Times-PWA",
@@ -316,7 +322,7 @@
     {
       "name": "hr-employee-management-system",
       "title": "Hr Employee Management System",
-      "description": "An enterprise-grade HR management platform featuring geo-location based attendance, comprehensive payroll processing, and real-time employee monitoring. The system supports multiple departments and includes advanced analytics with exportable reports.",
+      "description": "HR platform with geo-location attendance, payroll processing, and employee tracking. Built with React and Node.js.",
       "github_url": "https://github.com/MS-Jahan/hr-employee-management-system",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/hr-employee-management-system",
@@ -328,6 +334,8 @@
       ],
       "technologies": "TypeScript, JavaScript, React, Node.js",
       "categories": [
+        "private",
+        "in-progress",
         "web",
         "expert",
         "in-progress",
@@ -353,7 +361,7 @@
     {
       "name": "wifi-ap-mapper",
       "title": "Wifi Ap Mapper",
-      "description": "A specialized mapping application for visualizing WiFi access point scan data from wardriving activities. The tool parses CSV exports and displays each access point as an interactive map marker with synchronized table views, search filtering, and detailed information popups. Includes integration with OneShot fork for data generation.",
+      "description": "Visualize WiFi access points from wardriving data on a map. Upload CSV files and see APs as markers with details.",
       "github_url": "https://github.com/MS-Jahan/wifi-ap-mapper",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/wifi-ap-mapper",
@@ -390,7 +398,7 @@
     {
       "name": "Remote-PC-StartUp-NodeMCU",
       "title": "Remote Pc Startup Nodemcu",
-      "description": "IoT solution for remote PC wake-on-LAN using NodeMCU and Telegram bot. Enables starting computers remotely without port forwarding through ESP8266-based hardware and cloud messaging integration.",
+      "description": "Wake up your PC remotely using Telegram and a NodeMCU board. No port forwarding needed.",
       "github_url": "https://github.com/MS-Jahan/Remote-PC-StartUp-NodeMCU",
       "demo_url": "https://ms-jahan.notion.site/Wake-Up-PC-WakeOnLan-Remotely-Using-Telegram-and-NodeMCU-500802b5219949b1865ba849cbc390dc",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Remote-PC-StartUp-NodeMCU",
@@ -415,34 +423,9 @@
       "main_features": []
     },
     {
-      "name": "iso-profiles",
-      "title": "Iso Profiles",
-      "description": "A detailed collection of Manjaro ISO profile configurations with 167 configuration files, 60 images, and 41 desktop files, providing complete customization options for building custom Linux distributions. This repository includes profiles for multiple desktop environments (Community, Manjaro, OEM editions) and demonstrates expertise in Linux system configuration, package selection, and distribution branding. The extensive file count (623 total) indicates comprehensive customization covering themes, applications, system services, and user experience optimization.",
-      "github_url": "https://github.com/MS-Jahan/iso-profiles",
-      "demo_url": "",
-      "image": "https://opengraph.githubassets.com/1/MS-Jahan/iso-profiles",
-      "languages": [
-        "Configuration",
-        "Shell"
-      ],
-      "technologies": "Configuration, Shell",
-      "categories": [
-        "uncommon",
-        "expert"
-      ],
-      "creativity_score": 8,
-      "stars": 0,
-      "forks": 0,
-      "last_updated": "2021-10-22",
-      "is_private": false,
-      "readme_status": "good",
-      "unique_aspects": "A detailed collection of Manjaro ISO profile configurations with 167 configuration files, 60 images, and 41 desktop files, providing complete customization options for building custom Linux distributions. This repository includes profiles for multiple desktop environments (Community, Manjaro, OEM editions) and demonstrates expertise in Linux system configuration, package selection, and distribution branding. The extensive file count (623 total) indicates comprehensive customization covering themes, applications, system services, and user experience optimization.",
-      "main_features": []
-    },
-    {
       "name": "Facebook-Group-Post-Monitor",
       "title": "Facebook Group Post Monitor",
-      "description": "An automated monitoring system that tracks new posts in Facebook Groups using Selenium WebDriver and sends real-time notifications via Telegram bot. This tool automates Facebook authentication with 2FA support, continuously monitors specified group pages, and alerts users to new content. The project demonstrates expertise in web automation, social media scraping, and integration of multiple platforms (Facebook + Telegram) for creating a practical monitoring solution.",
+      "description": "Monitors Facebook groups for new posts and sends Telegram alerts. Uses Selenium to automate Facebook and handle 2FA.",
       "github_url": "https://github.com/MS-Jahan/Facebook-Group-Post-Monitor",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Facebook-Group-Post-Monitor",
@@ -451,6 +434,7 @@
       ],
       "technologies": "Python",
       "categories": [
+        "abandoned",
         "creative",
         "automation",
         "bot",
@@ -468,7 +452,7 @@
     {
       "name": "fb-auto-reply-py",
       "title": "Fb Auto Reply Py",
-      "description": "An advanced Facebook Messenger auto-reply bot featuring intelligent message matching, customizable response templates, user blacklisting, and human-like behavior simulation through random delays (4-10 seconds). The bot includes primary and secondary message systems, avoids group chats, and provides comprehensive setup documentation for both desktop and Android (via Termux). This project demonstrates advanced bot development with focus on avoiding detection and providing flexible automation for social media communication.",
+      "description": "Facebook Messenger auto-reply bot with message matching and user blacklisting. Has random delays to avoid detection.",
       "github_url": "https://github.com/MS-Jahan/fb-auto-reply-py",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/fb-auto-reply-py",
@@ -477,6 +461,7 @@
       ],
       "technologies": "Python",
       "categories": [
+        "abandoned",
         "creative",
         "bot",
         "automation"
@@ -493,7 +478,7 @@
     {
       "name": "Messenger-Account-Deactivation-Monitor",
       "title": "Messenger Account Deactivation Monitor",
-      "description": "A specialized monitoring tool that continuously checks if a specific Facebook Messenger account is active or deactivated, running checks every 50 seconds to avoid rate limiting. The tool uses fbchat library to verify account availability through messenger.com links and logs all status changes to a report file. This creative solution addresses a unique monitoring need, useful for tracking account status of important contacts or detecting account deactivation patterns.",
+      "description": "Checks every 50 seconds if a Facebook Messenger account is active or deactivated. Logs all status changes.",
       "github_url": "https://github.com/MS-Jahan/Messenger-Account-Deactivation-Monitor",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Messenger-Account-Deactivation-Monitor",
@@ -502,6 +487,7 @@
       ],
       "technologies": "Python",
       "categories": [
+        "abandoned",
         "creative",
         "uncommon",
         "automation",
@@ -519,7 +505,7 @@
     {
       "name": "Messenger-Image-Bulk-Downloader",
       "title": "Messenger Image Bulk Downloader",
-      "description": "A clever automation tool that downloads media from Facebook Messenger conversations by monitoring message reactions or detecting forwarded messages to your own conversation. This innovative approach uses fbchat and wget libraries to automatically download images, GIFs, and videos without manual saving. The project includes both Python script and compiled Windows binaries (32-bit and 64-bit), demonstrating thoughtful distribution planning for non-technical users and creative use of Messenger's reaction system for triggering downloads.",
+      "description": "Downloads media from Messenger automatically. React to a message or forward it to yourself to trigger download.",
       "github_url": "https://github.com/MS-Jahan/Messenger-Image-Bulk-Downloader",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Messenger-Image-Bulk-Downloader",
@@ -528,6 +514,7 @@
       ],
       "technologies": "Python",
       "categories": [
+        "abandoned",
         "creative",
         "automation",
         "bot"
@@ -544,7 +531,7 @@
     {
       "name": "Show_Usernames_in_Fiverr_Buyer_Requests",
       "title": "Show Usernames In Fiverr Buyer Requests",
-      "description": "A Tampermonkey userscript that enhances the Fiverr seller experience by automatically showing buyer usernames on the Buyer Requests page. This creative solution addresses a common pain point for Fiverr sellers who need to identify buyers before sending offers. The script extracts username data from hidden metadata and dynamically injects clickable username links, making the buyer request browsing process more efficient and user-friendly.",
+      "description": "Tampermonkey script that shows buyer usernames on Fiverr's Buyer Requests page. Makes it easier to identify buyers before sending offers.",
       "github_url": "https://github.com/MS-Jahan/Show_Usernames_in_Fiverr_Buyer_Requests",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Show_Usernames_in_Fiverr_Buyer_Requests",
@@ -553,6 +540,7 @@
       ],
       "technologies": "JavaScript",
       "categories": [
+        "abandoned",
         "creative",
         "uncommon",
         "automation",
@@ -570,7 +558,7 @@
     {
       "name": "Exam-Solver",
       "title": "Exam Solver",
-      "description": "A React-based educational assistant that leverages Google's Gemini AI to provide detailed explanations for exam questions uploaded as images. The application emphasizes ethical use for post-exam learning and includes features like answer history, model selection, and comprehensive documentation on responsible usage.",
+      "description": "Upload exam question images and get detailed explanations using Google Gemini AI. For post-exam learning only.",
       "github_url": "https://github.com/MS-Jahan/Exam-Solver",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Exam-Solver",
@@ -605,7 +593,7 @@
     {
       "name": "messenger-message-logger-go",
       "title": "Messenger Message Logger Go",
-      "description": "A high-performance message logging tool built in Go that captures and stores Facebook Messenger conversations. Useful for creating personal message archives, backup purposes, or analyzing conversation patterns.",
+      "description": "Go version of the Messenger logger. Faster performance for capturing and archiving Facebook Messenger conversations.",
       "github_url": "https://github.com/MS-Jahan/messenger-message-logger-go",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/messenger-message-logger-go",
@@ -614,6 +602,8 @@
       ],
       "technologies": "Go",
       "categories": [
+        "in-progress",
+        "private",
         "automation",
         "bot",
         "uncommon"
@@ -635,7 +625,7 @@
     {
       "name": "newspaper-bot-tg",
       "title": "Newspaper Bot Tg",
-      "description": "An intelligent Telegram bot that curates and delivers news articles from various sources. Features include Telegram's Instant View for better reading experience, smart caching to reduce redundant scraping, and automated scheduling for regular news updates.",
+      "description": "Telegram bot that delivers news from various sources. Uses Telegram's Instant View and caches articles to reduce scraping.",
       "github_url": "https://github.com/MS-Jahan/newspaper-bot-tg",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/newspaper-bot-tg",
@@ -666,41 +656,9 @@
       ]
     },
     {
-      "name": "wordpress-firebase-chat",
-      "title": "Wordpress Firebase Chat",
-      "description": "A WordPress plugin that adds real-time chat capabilities to WordPress websites using Firebase's real-time database. Allows site visitors to communicate instantly without page refreshes, perfect for community sites, customer support, or collaborative platforms.",
-      "github_url": "https://github.com/MS-Jahan/wordpress-firebase-chat",
-      "demo_url": "",
-      "image": "https://opengraph.githubassets.com/1/MS-Jahan/wordpress-firebase-chat",
-      "languages": [
-        "JavaScript",
-        "PHP"
-      ],
-      "technologies": "JavaScript, PHP",
-      "categories": [
-        "web",
-        "creative",
-        "uncommon"
-      ],
-      "creativity_score": 7,
-      "stars": 0,
-      "forks": 0,
-      "last_updated": "2025-06-02",
-      "is_private": true,
-      "readme_status": "needs_creation",
-      "unique_aspects": "WordPress-Firebase integration, real-time chat, plugin architecture",
-      "main_features": [
-        "Real-time chat functionality",
-        "Firebase integration",
-        "WordPress plugin",
-        "Live messaging",
-        "User presence detection"
-      ]
-    },
-    {
       "name": "flutter_unsplash_demo-potentialai",
       "title": "Flutter Unsplash Demo Potentialai",
-      "description": "A polished Flutter application demonstrating advanced mobile development techniques. Connects to Unsplash's API to display a vast collection of high-quality stock photos with smooth infinite scrolling, elegant hero animations during navigation, and intelligent offline caching for improved user experience.",
+      "description": "Flutter app showing Unsplash photos. Has infinite scroll, hero animations, and offline caching.",
       "github_url": "https://github.com/MS-Jahan/flutter_unsplash_demo-potentialai",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/flutter_unsplash_demo-potentialai",
@@ -732,7 +690,7 @@
     {
       "name": "zelf_hackathon_submission",
       "title": "Zelf Hackathon Submission",
-      "description": "A competitive hackathon submission for the Zelf event, showcasing rapid development skills and innovative problem-solving. Built with Python to address specific challenges presented during the competition.",
+      "description": "Hackathon submission for Zelf event. Built with Python.",
       "github_url": "https://github.com/MS-Jahan/zelf_hackathon_submission",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/zelf_hackathon_submission",
@@ -761,7 +719,7 @@
     {
       "name": "Daraz-Scraper-and-Visualization",
       "title": "Daraz Scraper And Visualization",
-      "description": "A comprehensive e-commerce data mining tool that scrapes product information from Daraz (South Asian Amazon) and creates visual analytics. Useful for price comparison, market research, and tracking product trends across the platform.",
+      "description": "Scrapes product info from Daraz (South Asian Amazon) and visualizes the data. Good for price tracking and market research.",
       "github_url": "https://github.com/MS-Jahan/Daraz-Scraper-and-Visualization",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Daraz-Scraper-and-Visualization",
@@ -793,7 +751,7 @@
     {
       "name": "army-phone-numbers",
       "title": "Army Phone Numbers",
-      "description": "A Progressive Web App providing emergency contact numbers for Bangladesh Army camps. Created during the 2024 political transition to help citizens contact military during law enforcement gaps. Features geolocation-based search, offline functionality, and responsive design built with React, Vite, and Tailwind CSS.",
+      "description": "PWA with emergency contact numbers for Bangladesh Army camps. Built during 2024 political transition. Works offline with geolocation search.",
       "github_url": "https://github.com/MS-Jahan/army-phone-numbers",
       "demo_url": "https://shenaprohori.pages.dev",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/army-phone-numbers",
@@ -816,34 +774,9 @@
       "main_features": []
     },
     {
-      "name": "iso-build",
-      "title": "Iso Build",
-      "description": "A customized Manjaro Linux distribution build configuration repository, containing the necessary scripts and configurations for creating a personalized Linux ISO. This project demonstrates deep understanding of Linux system architecture, package management, and distribution customization. The repository reflects ability to modify and optimize Linux distributions according to specific requirements, showcasing advanced system administration skills.",
-      "github_url": "https://github.com/MS-Jahan/iso-build",
-      "demo_url": "",
-      "image": "https://opengraph.githubassets.com/1/MS-Jahan/iso-build",
-      "languages": [
-        "Shell",
-        "Configuration"
-      ],
-      "technologies": "Shell, Configuration",
-      "categories": [
-        "uncommon",
-        "expert"
-      ],
-      "creativity_score": 7,
-      "stars": 0,
-      "forks": 0,
-      "last_updated": "2021-10-22",
-      "is_private": false,
-      "readme_status": "minimal",
-      "unique_aspects": "A customized Manjaro Linux distribution build configuration repository, containing the necessary scripts and configurations for creating a personalized Linux ISO. This project demonstrates deep understanding of Linux system architecture, package management, and distribution customization. The repository reflects ability to modify and optimize Linux distributions according to specific requirements, showcasing advanced system administration skills.",
-      "main_features": []
-    },
-    {
       "name": "OCR-with-Google-Drive-API",
       "title": "Ocr With Google Drive Api",
-      "description": "A practical implementation of OCR functionality leveraging Google Drive API's built-in text recognition capabilities. This project provides a simple Python interface for uploading images to Google Drive, extracting text content, and managing authentication with OAuth2. The tool demonstrates creative use of existing cloud services for OCR purposes, offering an alternative to dedicated OCR libraries while providing detailed documentation for setup and usage.",
+      "description": "Use Google Drive's built-in OCR to extract text from images. Python interface with OAuth2 authentication.",
       "github_url": "https://github.com/MS-Jahan/OCR-with-Google-Drive-API",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/OCR-with-Google-Drive-API",
@@ -868,7 +801,7 @@
     {
       "name": "Messenger-Message-Logger-Selenium",
       "title": "Messenger Message Logger Selenium",
-      "description": "A browser automation-based solution for logging Facebook Messenger conversations using Selenium WebDriver, offering an alternative approach to API-based logging. This tool manages authentication with 2FA support, stores browser session data, and continuously monitors for new messages while saving them to a file and displaying in terminal. The Selenium-based approach provides more reliability than unofficial APIs and demonstrates expertise in web automation and persistent session management.",
+      "description": "Logs Messenger conversations using Selenium instead of API. More reliable than unofficial APIs. Handles 2FA and saves sessions.",
       "github_url": "https://github.com/MS-Jahan/Messenger-Message-Logger-Selenium",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Messenger-Message-Logger-Selenium",
@@ -878,6 +811,7 @@
       ],
       "technologies": "Python, Selenium",
       "categories": [
+        "abandoned",
         "automation",
         "bot",
         "scraping"
@@ -894,7 +828,7 @@
     {
       "name": "Mpv-Dual-Subtitle-Opener",
       "title": "Mpv Dual Subtitle Opener",
-      "description": "A creative utility script that enables MPV media player to display dual subtitles simultaneously, perfect for language learners or viewers who want to see both original and translated subtitles. This tool simplifies the process of loading multiple subtitle tracks at once, providing a user-friendly solution with both script and compiled binary options. The project addresses a specific niche need in media playback and demonstrates problem-solving for video player customization.",
+      "description": "Load two subtitle files at once in MPV player. Good for language learning.",
       "github_url": "https://github.com/MS-Jahan/Mpv-Dual-Subtitle-Opener",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Mpv-Dual-Subtitle-Opener",
@@ -919,7 +853,7 @@
     {
       "name": "xuniltar",
       "title": "Xuniltar",
-      "description": "A Telegram bot-based remote task execution system specifically designed for Linux machines, enabling system administrators to perform remote operations through chat commands. This tool provides a simple yet effective interface for managing Linux systems remotely, executing commands, and receiving results via Telegram. The project demonstrates practical system administration automation and showcases integration of messaging platforms with server management tasks.",
+      "description": "Control Linux machines remotely through a Telegram bot. Execute commands and get results via chat.",
       "github_url": "https://github.com/MS-Jahan/xuniltar",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/xuniltar",
@@ -943,8 +877,8 @@
     },
     {
       "name": "nu-result-scraper-new",
-      "title": "Nu Result Scraper New",
-      "description": "A specialized web scraping tool designed to extract student result data from Bangladesh's National University website. Built with TypeScript for reliability and maintainability, it automates the process of collecting and structuring academic result information.",
+      "title": "Nu Result Scraper",
+      "description": "Scrapes student results from Bangladesh National University website. TypeScript implementation.",
       "github_url": "https://github.com/MS-Jahan/nu-result-scraper-new",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/nu-result-scraper-new",
@@ -954,6 +888,8 @@
       ],
       "technologies": "TypeScript, JavaScript",
       "categories": [
+        "in-progress",
+        "private",
         "web",
         "scraping",
         "automation",
@@ -976,7 +912,7 @@
     {
       "name": "markitdown-server",
       "title": "Markitdown Server",
-      "description": "A server application that exposes Microsoft's MarkItDown document conversion library as a web service. Allows users to convert various document formats (PDF, DOCX, etc.) to Markdown format through HTTP API endpoints.",
+      "description": "Web server that converts documents (PDF, DOCX, etc.) to Markdown using Microsoft's MarkItDown library.",
       "github_url": "https://github.com/MS-Jahan/markitdown-server",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/markitdown-server",
@@ -1006,7 +942,7 @@
     {
       "name": "voice-typer",
       "title": "Voice Typer",
-      "description": "An accessibility-focused application that enables users to type using voice commands. Utilizes speech recognition technology to convert spoken words into text, allowing for hands-free computer interaction and improved productivity for users with accessibility needs.",
+      "description": "Type using your voice. Speech recognition for hands-free computer use.",
       "github_url": "https://github.com/MS-Jahan/voice-typer",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/voice-typer",
@@ -1015,6 +951,8 @@
       ],
       "technologies": "Python",
       "categories": [
+        "in-progress",
+        "private",
         "automation",
         "ai",
         "creative"
@@ -1036,7 +974,7 @@
     {
       "name": "GDocUnblocker",
       "title": "Gdocunblocker",
-      "description": "A utility tool that helps users access Google Docs that may be blocked or restricted. Implements various techniques to bypass access limitations, useful for educational or research purposes when legitimate access is needed but temporarily unavailable.",
+      "description": "Access blocked Google Docs. Bypasses restrictions when you need legitimate access.",
       "github_url": "https://github.com/MS-Jahan/GDocUnblocker",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/GDocUnblocker",
@@ -1045,6 +983,8 @@
       ],
       "technologies": "JavaScript",
       "categories": [
+        "abandoned",
+        "creative",
         "web",
         "uncommon",
         "automation"
@@ -1066,10 +1006,10 @@
     {
       "name": "project_management-TechForing-django",
       "title": "Project Management Techforing Django",
-      "description": "A comprehensive project management platform built with Django framework. Enables teams to organize projects, track tasks, collaborate efficiently, and monitor progress through an intuitive dashboard. Designed specifically for TechForing's workflow requirements.",
+      "description": "Django-based project management platform for tracking tasks and team collaboration.",
       "github_url": "https://github.com/MS-Jahan/project_management-TechForing-django",
       "demo_url": "",
-      "image": "https://opengraph.githubassets.com/1/MS-Jahan/project_management-TechForing-django",
+      "image": "https://opengraph.githubassets.com/1/MS-Jahan/project_management-Techforing-django",
       "languages": [
         "Python",
         "Django"
@@ -1096,37 +1036,9 @@
       ]
     },
     {
-      "name": "timemachine",
-      "title": "Timemachine",
-      "description": "A specialized tool for managing time-based operations or viewing historical snapshots of data. The name suggests functionality related to temporal navigation or version control concepts.",
-      "github_url": "https://github.com/MS-Jahan/timemachine",
-      "demo_url": "",
-      "image": "https://opengraph.githubassets.com/1/MS-Jahan/timemachine",
-      "languages": [
-        "Unknown"
-      ],
-      "technologies": "Unknown",
-      "categories": [
-        "uncommon",
-        "in-progress"
-      ],
-      "creativity_score": 6,
-      "stars": 0,
-      "forks": 0,
-      "last_updated": "2024-09-25",
-      "is_private": false,
-      "readme_status": "needs_creation",
-      "unique_aspects": "Time-based operations, temporal management, historical data",
-      "main_features": [
-        "Time-based functionality",
-        "Temporal operations",
-        "Historical data management"
-      ]
-    },
-    {
       "name": "Convert-Binary-to-Text-on-Facebook-Posts",
       "title": "Convert Binary To Text On Facebook Posts",
-      "description": "A clever utility tool that automatically detects and converts binary code found in Facebook posts into human-readable text. Useful for decoding messages shared in binary format, making social media interactions more accessible.",
+      "description": "Automatically converts binary code in Facebook posts to readable text.",
       "github_url": "https://github.com/MS-Jahan/Convert-Binary-to-Text-on-Facebook-Posts",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Convert-Binary-to-Text-on-Facebook-Posts",
@@ -1155,59 +1067,9 @@
       ]
     },
     {
-      "name": "code-server-deploy-template",
-      "title": "Code Server Deploy Template",
-      "description": "A forked repository providing comprehensive deployment guides and one-click buttons for setting up code-server (VS Code in the browser) on multiple cloud hosting platforms. This project simplifies the process of creating cloud-based development environments, offering detailed guides for platforms like AWS EC2, DigitalOcean, Railway, Heroku, and Azure. The repository demonstrates cloud infrastructure knowledge and provides valuable documentation for developers seeking remote development solutions.",
-      "github_url": "https://github.com/MS-Jahan/code-server-deploy-template",
-      "demo_url": "",
-      "image": "https://opengraph.githubassets.com/1/MS-Jahan/code-server-deploy-template",
-      "languages": [
-        "Shell",
-        "Dockerfile"
-      ],
-      "technologies": "Shell, Dockerfile",
-      "categories": [
-        "web",
-        "automation"
-      ],
-      "creativity_score": 6,
-      "stars": 0,
-      "forks": 2,
-      "last_updated": "2022-04-16",
-      "is_private": false,
-      "readme_status": "excellent",
-      "unique_aspects": "A forked repository providing comprehensive deployment guides and one-click buttons for setting up code-server (VS Code in the browser) on multiple cloud hosting platforms. This project simplifies the process of creating cloud-based development environments, offering detailed guides for platforms like AWS EC2, DigitalOcean, Railway, Heroku, and Azure. The repository demonstrates cloud infrastructure knowledge and provides valuable documentation for developers seeking remote development solutions.",
-      "main_features": []
-    },
-    {
-      "name": "election-backend",
-      "title": "Election Backend",
-      "description": "A Django-based backend application designed for an election voter information search system, featuring RESTful API endpoints for querying voter data. This project demonstrates full-stack web development capabilities with focus on backend architecture, database management, and API design. The repository includes 25 Python files suggesting a well-structured Django application with models, views, serializers, and utility functions for handling election-related data queries.",
-      "github_url": "https://github.com/MS-Jahan/election-backend",
-      "demo_url": "",
-      "image": "https://opengraph.githubassets.com/1/MS-Jahan/election-backend",
-      "languages": [
-        "Python",
-        "Django"
-      ],
-      "technologies": "Python, Django",
-      "categories": [
-        "web",
-        "novice"
-      ],
-      "creativity_score": 6,
-      "stars": 0,
-      "forks": 0,
-      "last_updated": "2021-10-12",
-      "is_private": false,
-      "readme_status": "needs_creation",
-      "unique_aspects": "A Django-based backend application designed for an election voter information search system, featuring RESTful API endpoints for querying voter data. This project demonstrates full-stack web development capabilities with focus on backend architecture, database management, and API design. The repository includes 25 Python files suggesting a well-structured Django application with models, views, serializers, and utility functions for handling election-related data queries.",
-      "main_features": []
-    },
-    {
       "name": "messenger-chat-logger",
       "title": "Messenger Chat Logger",
-      "description": "A Python-based tool for logging and archiving Facebook Messenger conversations, utilizing the fbchat library for programmatic access to Messenger. This project enables automated backup of chat histories, message monitoring, and conversation archiving. The tool addresses the need for persistent message storage and demonstrates understanding of unofficial API usage and real-time message handling.",
+      "description": "Archives Facebook Messenger conversations using the fbchat library. For backing up chat histories.",
       "github_url": "https://github.com/MS-Jahan/messenger-chat-logger",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/messenger-chat-logger",
@@ -1216,6 +1078,10 @@
       ],
       "technologies": "Python",
       "categories": [
+        "abandoned",
+        "private",
+        "creative",
+        "uncommon",
         "automation",
         "bot"
       ],
@@ -1229,35 +1095,9 @@
       "main_features": []
     },
     {
-      "name": "Facebook-Group-Bot",
-      "title": "Facebook Group Bot",
-      "description": "A Facebook Group automation bot designed for managing and tracking group interactions, currently storing interaction data in JSON format with plans for full code release. This project is part of a larger ecosystem of Facebook automation tools, focusing on group management, post monitoring, and automated interactions. The repository represents work-in-progress on social media automation for community management.",
-      "github_url": "https://github.com/MS-Jahan/Facebook-Group-Bot",
-      "demo_url": "",
-      "image": "https://opengraph.githubassets.com/1/MS-Jahan/Facebook-Group-Bot",
-      "languages": [
-        "Python",
-        "JSON"
-      ],
-      "technologies": "Python, JSON",
-      "categories": [
-        "bot",
-        "automation",
-        "in-progress"
-      ],
-      "creativity_score": 6,
-      "stars": 0,
-      "forks": 0,
-      "last_updated": "2021-08-21",
-      "is_private": false,
-      "readme_status": "minimal",
-      "unique_aspects": "A Facebook Group automation bot designed for managing and tracking group interactions, currently storing interaction data in JSON format with plans for full code release. This project is part of a larger ecosystem of Facebook automation tools, focusing on group management, post monitoring, and automated interactions. The repository represents work-in-progress on social media automation for community management.",
-      "main_features": []
-    },
-    {
       "name": "Messenger-Bulk-Message-Sender",
       "title": "Messenger Bulk Message Sender",
-      "description": "An efficient bulk messaging solution for Facebook Messenger using Selenium WebDriver automation, enabling users to send the same message to multiple recipients from a list of conversation links. The tool features session persistence through cookie storage (via authenticate.py), automated navigation to mbasic.facebook.com for better reliability, and simple configuration through text files. This project provides a practical automation solution for mass communication needs while demonstrating expertise in web automation and session management.",
+      "description": "Send the same message to multiple people on Messenger using Selenium. Uses mbasic.facebook.com for reliability.",
       "github_url": "https://github.com/MS-Jahan/Messenger-Bulk-Message-Sender",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Messenger-Bulk-Message-Sender",
@@ -1267,6 +1107,7 @@
       ],
       "technologies": "Python, Selenium",
       "categories": [
+        "abandoned",
         "automation",
         "bot"
       ],
@@ -1280,39 +1121,9 @@
       "main_features": []
     },
     {
-      "name": "ProCal-Builds",
-      "title": "Procal Builds",
-      "description": "A repository dedicated to storing compiled builds and releases of the ProCal nutrition tracking application. ProCal features voice, text, and image input for tracking food intake, integrated with ChatGPT and Logmeal API for intelligent nutrition analysis.",
-      "github_url": "https://github.com/MS-Jahan/ProCal-Builds",
-      "demo_url": "",
-      "image": "https://opengraph.githubassets.com/1/MS-Jahan/ProCal-Builds",
-      "languages": [
-        "Dart",
-        "Flutter"
-      ],
-      "technologies": "Dart, Flutter",
-      "categories": [
-        "mobile",
-        "in-progress"
-      ],
-      "creativity_score": 5,
-      "stars": 0,
-      "forks": 0,
-      "last_updated": "2025-02-15",
-      "is_private": true,
-      "readme_status": "needs_creation",
-      "unique_aspects": "Flutter app builds, nutrition tracking, release management",
-      "main_features": [
-        "ProCal app builds",
-        "Release management",
-        "Version artifacts",
-        "Distribution files"
-      ]
-    },
-    {
       "name": "ms-jahan.github.io",
       "title": "Ms Jahan.Github.Io",
-      "description": "A professional portfolio website hosted on GitHub Pages that presents the developer's work, technical skills, and career achievements. Features a clean, modern design with React components and Bootstrap styling for optimal viewing across all devices.",
+      "description": "My personal portfolio website. Built with React and Bootstrap, hosted on GitHub Pages.",
       "github_url": "https://github.com/MS-Jahan/ms-jahan.github.io",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/ms-jahan.github.io",
@@ -1345,8 +1156,8 @@
     },
     {
       "name": "nu-result-scraper",
-      "title": "Nu Result Scraper",
-      "description": "The original JavaScript implementation for scraping student examination results from Bangladesh National University's website. Automates the process of collecting result data, making it accessible for analysis or archival purposes.",
+      "title": "Nu Result Scraper (Old)",
+      "description": "Old JavaScript version for scraping Bangladesh National University results.",
       "github_url": "https://github.com/MS-Jahan/nu-result-scraper",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/nu-result-scraper",
@@ -1355,6 +1166,8 @@
       ],
       "technologies": "JavaScript",
       "categories": [
+        "abandoned",
+        "private",
         "web",
         "scraping",
         "automation"
@@ -1376,7 +1189,7 @@
     {
       "name": "SurveySafari",
       "title": "Surveysafari",
-      "description": "A web-based survey platform that simplifies the process of creating, sharing, and analyzing questionnaires. Provides an intuitive interface for building surveys and collecting responses from participants.",
+      "description": "Web platform for creating and managing surveys.",
       "github_url": "https://github.com/MS-Jahan/SurveySafari",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/SurveySafari",
@@ -1387,6 +1200,7 @@
       ],
       "technologies": "HTML, JavaScript, CSS",
       "categories": [
+        "abandoned",
         "web",
         "novice"
       ],
@@ -1408,7 +1222,7 @@
     {
       "name": "Event_Registration_System",
       "title": "Event Registration System",
-      "description": "A complete event management solution built with Python that streamlines the registration process for events. Manages attendee information, issues tickets, and provides organizers with tools to track registrations and manage event logistics.",
+      "description": "Python-based event registration and ticketing system.",
       "github_url": "https://github.com/MS-Jahan/Event_Registration_System",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Event_Registration_System",
@@ -1438,7 +1252,7 @@
     {
       "name": "TC-Games-Keymapper-Scripts",
       "title": "Tc Games Keymapper Scripts",
-      "description": "A collection of custom keymapper configuration files for the TC Games Android emulator, providing optimized control schemes for popular mobile games. This repository includes carefully crafted configuration scripts for games like PUBG Lite, Call of Duty Mobile, and Mini Militia, enabling better keyboard and mouse controls for Android games on PC. The project showcases understanding of emulator customization and gaming optimization.",
+      "description": "Custom keyboard/mouse configs for mobile games on TC Games Android emulator. Includes PUBG, COD Mobile, and Mini Militia setups.",
       "github_url": "https://github.com/MS-Jahan/TC-Games-Keymapper-Scripts",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/TC-Games-Keymapper-Scripts",
@@ -1460,86 +1274,9 @@
       "main_features": []
     },
     {
-      "name": "FB-Group-Bot-PostIDs",
-      "title": "Fb Group Bot Postids",
-      "description": "A specialized bot designed for Facebook Group administration, focusing on tracking and managing post IDs for moderation purposes. This tool appears to be part of a larger ecosystem of Facebook automation tools, providing functionality for monitoring group activity and organizing post data. The project demonstrates understanding of Facebook's unofficial APIs and bot development for social media automation.",
-      "github_url": "https://github.com/MS-Jahan/FB-Group-Bot-PostIDs",
-      "demo_url": "",
-      "image": "https://opengraph.githubassets.com/1/MS-Jahan/FB-Group-Bot-PostIDs",
-      "languages": [
-        "Python"
-      ],
-      "technologies": "Python",
-      "categories": [
-        "bot",
-        "automation",
-        "in-progress"
-      ],
-      "creativity_score": 5,
-      "stars": 0,
-      "forks": 0,
-      "last_updated": "2021-10-30",
-      "is_private": false,
-      "readme_status": "needs_creation",
-      "unique_aspects": "A specialized bot designed for Facebook Group administration, focusing on tracking and managing post IDs for moderation purposes. This tool appears to be part of a larger ecosystem of Facebook automation tools, providing functionality for monitoring group activity and organizing post data. The project demonstrates understanding of Facebook's unofficial APIs and bot development for social media automation.",
-      "main_features": []
-    },
-    {
-      "name": "election-frontpage",
-      "title": "Election Frontpage",
-      "description": "The frontend companion to the election-backend project, providing a user-friendly web interface for searching and displaying election voter information. This project includes HTML pages, JavaScript functionality for API integration, and responsive design elements. The separation of frontend and backend demonstrates understanding of modern web development architecture and RESTful API consumption.",
-      "github_url": "https://github.com/MS-Jahan/election-frontpage",
-      "demo_url": "",
-      "image": "https://opengraph.githubassets.com/1/MS-Jahan/election-frontpage",
-      "languages": [
-        "HTML",
-        "JavaScript",
-        "CSS"
-      ],
-      "technologies": "HTML, JavaScript, CSS",
-      "categories": [
-        "web",
-        "novice"
-      ],
-      "creativity_score": 5,
-      "stars": 0,
-      "forks": 0,
-      "last_updated": "2021-09-26",
-      "is_private": false,
-      "readme_status": "good",
-      "unique_aspects": "The frontend companion to the election-backend project, providing a user-friendly web interface for searching and displaying election voter information. This project includes HTML pages, JavaScript functionality for API integration, and responsive design elements. The separation of frontend and backend demonstrates understanding of modern web development architecture and RESTful API consumption.",
-      "main_features": []
-    },
-    {
-      "name": "Online-School-Frontpage",
-      "title": "Online School Frontpage",
-      "description": "A professionally designed landing page for an online school platform, featuring Bootstrap 5 framework, responsive navigation, image sliders, and modern UI components. The project includes 36 JPG images and 21 PNG assets, along with custom CSS styling and JavaScript functionality. This comprehensive frontend showcases web design capabilities, responsive layout implementation, and creating engaging educational platform interfaces with attention to visual appeal and user experience.",
-      "github_url": "https://github.com/MS-Jahan/Online-School-Frontpage",
-      "demo_url": "",
-      "image": "https://opengraph.githubassets.com/1/MS-Jahan/Online-School-Frontpage",
-      "languages": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ],
-      "technologies": "HTML, CSS, JavaScript",
-      "categories": [
-        "web",
-        "novice"
-      ],
-      "creativity_score": 5,
-      "stars": 0,
-      "forks": 0,
-      "last_updated": "2021-09-08",
-      "is_private": false,
-      "readme_status": "needs_creation",
-      "unique_aspects": "A professionally designed landing page for an online school platform, featuring Bootstrap 5 framework, responsive navigation, image sliders, and modern UI components. The project includes 36 JPG images and 21 PNG assets, along with custom CSS styling and JavaScript functionality. This comprehensive frontend showcases web design capabilities, responsive layout implementation, and creating engaging educational platform interfaces with attention to visual appeal and user experience.",
-      "main_features": []
-    },
-    {
       "name": "blog",
       "title": "Blog",
-      "description": "A personal blogging platform using Jekyll static site generator with the Basically Basic theme. Offers multiple layout options including blog posts, pages, CV/resume, and category/tag archives. Includes modern features like site-wide search and responsive design.",
+      "description": "Jekyll static blog with the Basically Basic theme. Has search, CV layout, and multiple theme options.",
       "github_url": "https://github.com/MS-Jahan/blog",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/blog",
@@ -1574,9 +1311,9 @@
     {
       "name": "LinguaType",
       "title": "Linguatype",
-      "description": "A Next.js application template integrated with Firebase backend services. Serves as a starting point for building modern web applications with server-side rendering capabilities and Firebase's suite of backend tools.",
+      "description": "Next.js starter template with Firebase backend.",
       "github_url": "https://github.com/MS-Jahan/LinguaType",
-      "demo_url": "",
+      "demo_url": "https://linguatype.sabit.dev",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/LinguaType",
       "languages": [
         "TypeScript",
@@ -1585,6 +1322,7 @@
       ],
       "technologies": "TypeScript, JavaScript, Next.js",
       "categories": [
+        "in-progress",
         "web",
         "in-progress",
         "novice"
@@ -1604,41 +1342,9 @@
       ]
     },
     {
-      "name": "laravel-admin-panel",
-      "title": "Laravel Admin Panel",
-      "description": "A foundational admin panel built with Laravel framework that provides essential backend management capabilities. Features user authentication, database management, and standard CRUD operations for managing application data.",
-      "github_url": "https://github.com/MS-Jahan/laravel-admin-panel",
-      "demo_url": "",
-      "image": "https://opengraph.githubassets.com/1/MS-Jahan/laravel-admin-panel",
-      "languages": [
-        "PHP",
-        "Laravel"
-      ],
-      "technologies": "PHP, Laravel",
-      "categories": [
-        "web",
-        "novice"
-      ],
-      "creativity_score": 4,
-      "stars": 0,
-      "forks": 0,
-      "last_updated": "2024-09-14",
-      "is_private": false,
-      "readme_status": "needs_creation",
-      "unique_aspects": "Laravel admin panel, backend management, authentication system",
-      "main_features": [
-        "Laravel framework",
-        "Admin dashboard",
-        "User authentication",
-        "CRUD operations",
-        "Database management",
-        "Role-based access"
-      ]
-    },
-    {
       "name": "fbchat-pyppeteer",
       "title": "Fbchat Pyppeteer",
-      "description": "Facebook Chat automation library using Pyppeteer for browser-based messaging. Provides programmatic access to Facebook Messenger through headless browser control, enabling bot development and automated messaging workflows.",
+      "description": "Facebook Chat library using Pyppeteer for headless browser control. For building Messenger bots.",
       "github_url": "https://github.com/MS-Jahan/fbchat-pyppeteer",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/fbchat-pyppeteer",
@@ -1647,6 +1353,7 @@
       ],
       "technologies": "Python",
       "categories": [
+        "abandoned",
         "automation",
         "bot"
       ],
@@ -1660,38 +1367,9 @@
       "main_features": []
     },
     {
-      "name": "mynotes",
-      "title": "Mynotes",
-      "description": "A comprehensive note-taking application built with Flutter, demonstrating full-stack mobile development capabilities with Firebase authentication integration. This cross-platform app showcases implementation of user authentication, CRUD operations for notes, and responsive UI design across iOS, Android, web, and desktop platforms. The project reflects understanding of modern mobile development architecture, state management, and cloud-based backend integration.",
-      "github_url": "https://github.com/MS-Jahan/mynotes",
-      "demo_url": "",
-      "image": "https://opengraph.githubassets.com/1/MS-Jahan/mynotes",
-      "languages": [
-        "C++",
-        "Dart",
-        "Swift",
-        "Kotlin"
-      ],
-      "technologies": "C++, Dart, Swift, Kotlin",
-      "categories": [
-        "mobile",
-        "web",
-        "novice",
-        "in-progress"
-      ],
-      "creativity_score": 4,
-      "stars": 0,
-      "forks": 0,
-      "last_updated": "2022-05-15",
-      "is_private": false,
-      "readme_status": "needs_update",
-      "unique_aspects": "A comprehensive note-taking application built with Flutter, demonstrating full-stack mobile development capabilities with Firebase authentication integration. This cross-platform app showcases implementation of user authentication, CRUD operations for notes, and responsive UI design across iOS, Android, web, and desktop platforms. The project reflects understanding of modern mobile development architecture, state management, and cloud-based backend integration.",
-      "main_features": []
-    },
-    {
       "name": "Problem-Solving",
       "title": "Problem Solving",
-      "description": "An extensive collection of problem-solving implementations primarily in C and C++, containing 276 C++ files and 111 C files covering various algorithmic challenges. This repository serves as a comprehensive archive of competitive programming practice, demonstrating proficiency in data structures, algorithms, and problem-solving techniques. The large number of solutions indicates consistent practice and dedication to improving programming skills through platforms like UVa, Codeforces, or similar online judges.",
+      "description": "Collection of competitive programming solutions in C and C++. 276 C++ files and 111 C files.",
       "github_url": "https://github.com/MS-Jahan/Problem-Solving",
       "demo_url": "",
       "image": "https://opengraph.githubassets.com/1/MS-Jahan/Problem-Solving",
@@ -1701,7 +1379,6 @@
       ],
       "technologies": "C++, C",
       "categories": [
-        "expert",
         "novice"
       ],
       "creativity_score": 4,

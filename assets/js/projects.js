@@ -30,7 +30,17 @@ class ProjectsManager {
         const response = await fetch('/data/projects.json');
         const data = await response.json();
         this.allProjects = data.projects;
-        this.categories = data.categories;
+
+        // Extract unique categories from all projects
+        const categoriesSet = new Set();
+        this.allProjects.forEach(project => {
+            if (project.categories && Array.isArray(project.categories)) {
+                project.categories.forEach(cat => categoriesSet.add(cat));
+            }
+        });
+
+        // Convert to array and sort alphabetically
+        this.categories = Array.from(categoriesSet).sort();
     }
 
     setupUI() {

@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "updated": "2025-10-15",
+    "source": "Portfolio Analysis"
+  },
+  "skills": [
+    {
+      "category": "Frontend",
+      "items": [
+        {"name": "HTML", "level": 100},
+        {"name": "CSS", "level": 82},
+        {"name": "JavaScript", "level": 75},
+        {"name": "React", "level": 75},
+        {"name": "Bootstrap", "level": 85},
+        {"name": "Tailwind CSS", "level": 70}
+      ]
+    },
+    {
+      "category": "Backend",
+      "items": [
+        {"name": "Python", "level": 83},
+        {"name": "Django", "level": 78},
+        {"name": "Flask", "level": 80},
+        {"name": "Node.js", "level": 70},
+        {"name": "PHP", "level": 71},
+        {"name": "FastAPI", "level": 72}
+      ]
+    },
+    {
+      "category": "Mobile Development",
+      "items": [
+        {"name": "Flutter", "level": 78},
+        {"name": "Dart", "level": 75},
+        {"name": "Android (Java/Kotlin)", "level": 74},
+        {"name": "PWA", "level": 92},
+        {"name": "Kivy (Python)", "level": 85}
+      ]
+    },
+    {
+      "category": "Database & Cloud",
+      "items": [
+        {"name": "PostgreSQL", "level": 75},
+        {"name": "MySQL", "level": 80},
+        {"name": "MongoDB", "level": 72},
+        {"name": "SQLite", "level": 85},
+        {"name": "Firebase", "level": 78},
+        {"name": "Redis", "level": 68}
+      ]
+    },
+    {
+      "category": "DevOps & Tools",
+      "items": [
+        {"name": "Git & GitHub", "level": 90},
+        {"name": "Docker", "level": 75},
+        {"name": "Linux", "level": 88},
+        {"name": "Bash Scripting", "level": 82},
+        {"name": "CI/CD", "level": 70},
+        {"name": "Nginx", "level": 72}
+      ]
+    },
+    {
+      "category": "Specialized",
+      "items": [
+        {"name": "Web Scraping", "level": 90},
+        {"name": "Telegram Bots", "level": 95},
+        {"name": "IoT (Arduino/NodeMCU)", "level": 80},
+        {"name": "Automation", "level": 88},
+        {"name": "WordPress/CMS", "level": 82},
+        {"name": "Security & Pentesting", "level": 70}
+      ]
+    },
+    {
+      "category": "AI & Data",
+      "items": [
+        {"name": "ChatGPT API Integration", "level": 80},
+        {"name": "Data Analysis (Pandas)", "level": 75},
+        {"name": "Data Visualization", "level": 72},
+        {"name": "Machine Learning Basics", "level": 65},
+        {"name": "NLP", "level": 68}
+      ]
+    },
+    {
+      "category": "Design",
+      "items": [
+        {"name": "Photoshop", "level": 89},
+        {"name": "Illustrator", "level": 87},
+        {"name": "UI/UX Design", "level": 75},
+        {"name": "Figma", "level": 70}
+      ]
+    },
+    {
+      "category": "Other",
+      "items": [
+        {"name": "C/C++ (Competitive Programming)", "level": 51},
+        {"name": "Go", "level": 60},
+        {"name": "TypeScript", "level": 72},
+        {"name": "Problem Solving", "level": 80},
+        {"name": "Project Management", "level": 75}
+      ]
+    }
+  ]
+}

@@ -56,7 +56,8 @@ function App() {
     skype: "https://join.skype.com/invite/pj94atkmP0vi",
     website: "https://" + document.location.host,
     fiverr: "https://www.fiverr.com/msjsabit",
-    upwork: "https://www.upwork.com/freelancers/~01ec8b257f52a4c62c"
+    upwork: "https://www.upwork.com/freelancers/~01ec8b257f52a4c62c",
+    upworkAgency: "https://www.upwork.com/agencies/vexellence/"
   }
 
   return (

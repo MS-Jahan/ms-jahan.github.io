@@ -1,0 +1,22 @@
+<Router>
+    <div className="App">
+      <Header/>
+      <Switch>
+        {/* <Route path="/" exact component={Header} /> */}
+        <Route path="/about" component={About} />
+        <Route path="/resume" component={Resume} />
+        <Route path="/services" component={Services} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/contact" component={Contact} />
+      </Switch>
+    </div>
+    </Router>
+
+<div>
+      <Header/>
+      <About/>
+      <Resume/>
+      <Services/>
+      <Portfolio/>
+      <Contact/>
+   </div>

@@ -55,8 +55,8 @@ function App() {
     linkedin: "https://www.linkedin.com/in/mdsarwarjahan-sabit/",
     skype: "https://join.skype.com/invite/pj94atkmP0vi",
     website: "https://" + document.location.host,
-    fiverr: "https://www.fiverr.com/msjsabit"
-
+    fiverr: "https://www.fiverr.com/msjsabit",
+    upwork: "https://www.upwork.com/freelancers/~01ec8b257f52a4c62c"
   }
 
   return (

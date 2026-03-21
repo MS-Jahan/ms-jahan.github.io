@@ -1017,6 +1017,26 @@ section .container {
   color: #18d26e;
 }
 
+.contact .info-box .social-links .upwork-icon,
+.contact .info-box .social-links .upwork-agency-icon {
+  font-size: 18px;
+}
+
+.contact .info-box .social-links .upwork-icon span {
+  display: inline-block;
+  line-height: 1;
+}
+
+#header .social-links .upwork-icon,
+#header .social-links .upwork-agency-icon {
+  font-size: 18px;
+}
+
+#header .social-links .upwork-icon span {
+  display: inline-block;
+  line-height: 1;
+}
+
 .contact .telegram-message-form {
   padding: 30px;
   background: rgba(255, 255, 255, 0.08);

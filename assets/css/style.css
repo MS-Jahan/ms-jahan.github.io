@@ -107,6 +107,8 @@ h6 {
 #header .social-links {
   margin-top: 40px;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #header .social-links a {
@@ -127,18 +129,13 @@ h6 {
   background: #18d26e;
 }
 
-#header .social-links a.fiverr,
-#header .social-links a.upwork,
-#header .social-links a.upwork-agency {
-  border-radius: 0 !important;
-  background: transparent !important;
-}
-
 #header .social-links a.fiverr:hover,
 #header .social-links a.upwork:hover,
+#header .social-links a.agency-website:hover,
 #header .social-links a.upwork-agency:hover,
 .contact .info-box .social-links a.fiverr:hover,
 .contact .info-box .social-links a.upwork:hover,
+.contact .info-box .social-links a.agency-website:hover,
 .contact .info-box .social-links a.upwork-agency:hover {
   color: #18d26e;
 }
@@ -1133,6 +1130,8 @@ section .container {
 .contact .info-box .social-links {
   margin: 5px 0 0 68px;
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .contact .info-box .social-links a {

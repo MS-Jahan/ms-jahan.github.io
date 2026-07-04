@@ -1,10 +1,11 @@
 {
   "metadata": {
     "generated": "2025-10-15T18:11:16.308414",
-    "total_projects": 59,
+    "total_projects": 53,
     "source": "MS-Jahan GitHub repositories",
     "version": "1.0",
-    "generated_by": "Claude Code"
+    "generated_by": "Claude Code",
+    "featured_count": 7
   },
   "categories": [
     "ai",
@@ -22,6 +23,304 @@
     "web"
   ],
   "projects": [
+    {
+      "name": "growth-your-business",
+      "title": "Growth Your Business",
+      "description": "Hybrid WordPress+React agency site for vxlnce.com clients. Combines headless WP CMS with a modern React frontend — 8 service pages, AI-generated blog posts, and Calendly booking integration.",
+      "github_url": "",
+      "demo_url": "https://growthyourbusiness.com",
+      "image": "assets/img/projects/growth-your-business.jpg",
+      "languages": [
+        "TypeScript",
+        "PHP"
+      ],
+      "technologies": "React 19, TypeScript, Tailwind CSS v4, Framer Motion, WordPress REST API, Gemini AI, Calendly",
+      "tech_stack": [
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS v4",
+        "Framer Motion",
+        "WordPress REST API",
+        "Gemini AI",
+        "Calendly",
+        "PHP"
+      ],
+      "categories": [
+        "web",
+        "agency",
+        "creative",
+        "expert"
+      ],
+      "creativity_score": 10,
+      "stars": 0,
+      "forks": 0,
+      "last_updated": "2026-06-01",
+      "is_private": true,
+      "readme_status": "good",
+      "featured": true,
+      "featured_order": 1,
+      "unique_aspects": "Headless hybrid architecture: WordPress handles content management while React 19 delivers a blazing-fast, animated frontend. Built for a digital marketing agency with 8 full service pages, Gemini-powered AI blog generation, and seamless Calendly scheduling. Designed for business owners who need a professional web presence with zero operational complexity.",
+      "main_features": [
+        "Headless WordPress + React 19 hybrid architecture",
+        "8 full service pages with animated layouts",
+        "Gemini AI-powered blog post generation",
+        "Calendly booking integration",
+        "Tailwind CSS v4 + Framer Motion animations",
+        "SEO-optimised structure"
+      ]
+    },
+    {
+      "name": "jointeamhunt",
+      "title": "JoinTeamHunt",
+      "description": "Hunting community platform spanning 11 US states. Combines a BuddyBoss/WooCommerce WordPress core with a custom React + NestJS backend featuring real-time chat, Stripe payments, and a Mapbox team-units map.",
+      "github_url": "",
+      "demo_url": "https://jointeamhunt.com",
+      "image": "assets/img/projects/jointeamhunt.jpg",
+      "languages": [
+        "TypeScript",
+        "PHP"
+      ],
+      "technologies": "WordPress, BuddyBoss, WooCommerce, React, NestJS, Prisma, Stripe, Socket.io, Mapbox",
+      "tech_stack": [
+        "WordPress",
+        "BuddyBoss",
+        "WooCommerce",
+        "React",
+        "NestJS",
+        "Prisma ORM",
+        "Stripe",
+        "Socket.io",
+        "Mapbox",
+        "TypeScript"
+      ],
+      "categories": [
+        "web",
+        "fullstack",
+        "expert"
+      ],
+      "creativity_score": 9,
+      "stars": 0,
+      "forks": 0,
+      "last_updated": "2026-04-01",
+      "is_private": true,
+      "readme_status": "good",
+      "featured": true,
+      "featured_order": 2,
+      "unique_aspects": "Full-stack hunting community for US sportsmen — WordPress for community features (BuddyBoss groups, WooCommerce memberships) paired with a custom NestJS microservice for real-time chat, team formation, Stripe subscriptions, and a Mapbox interactive map of team units across 11 US states. Built for hunting enthusiasts who want to find, form, and coordinate hunting teams.",
+      "main_features": [
+        "BuddyBoss community + WooCommerce memberships",
+        "Real-time team chat via Socket.io",
+        "Mapbox interactive team-units map (11 US states)",
+        "Stripe subscription payments",
+        "NestJS + Prisma custom backend API",
+        "Team formation and coordination tools"
+      ]
+    },
+    {
+      "name": "rayyan-group",
+      "title": "Rayyan Group — 3-App Business Suite",
+      "description": "Three integrated web applications + admin portal for Rayyan Group: farm management, feed-store operations, and FMCG distribution — all with QR receipts and role-based dashboards.",
+      "github_url": "",
+      "demo_url": "",
+      "image": "assets/img/projects/rayyan-group.jpg",
+      "languages": [
+        "Python"
+      ],
+      "technologies": "Python 3.12, Django 4.2, MySQL, Docker, Coolify",
+      "tech_stack": [
+        "Python 3.12",
+        "Django 4.2",
+        "MySQL",
+        "Docker",
+        "Coolify",
+        "QR code generation"
+      ],
+      "categories": [
+        "web",
+        "fullstack",
+        "expert"
+      ],
+      "creativity_score": 9,
+      "stars": 0,
+      "forks": 0,
+      "last_updated": "2026-03-01",
+      "is_private": true,
+      "readme_status": "good",
+      "featured": true,
+      "featured_order": 3,
+      "unique_aspects": "Enterprise-grade suite of 3 business apps (farm management, feed store, FMCG distribution) for a real Bangladeshi conglomerate. Each app has role-based dashboards and QR-code receipts. Containerised with Docker and deployed via Coolify self-hosted PaaS. Built for business owners who need reliable, private, on-premise business tooling.",
+      "main_features": [
+        "Farm management app with inventory tracking",
+        "Feed-store operations and billing",
+        "FMCG distribution portal",
+        "QR-code digital receipts",
+        "Role-based dashboards per business unit",
+        "Docker + Coolify containerised deployment"
+      ]
+    },
+    {
+      "name": "valcor-group",
+      "title": "Valcor Group — Private Security Firm Site",
+      "description": "High-performance static site for a private security firm — converted from WordPress to pure static, hosted on Cloudflare Pages with Turnstile bot-protection and an interactive guard-pin satellite map.",
+      "github_url": "",
+      "demo_url": "",
+      "image": "assets/img/projects/valcor-group.jpg",
+      "languages": [
+        "JavaScript",
+        "HTML"
+      ],
+      "technologies": "Static HTML/CSS/JS, Cloudflare Pages, Cloudflare Turnstile, Leaflet/Mapbox satellite map",
+      "tech_stack": [
+        "Static HTML/CSS/JS",
+        "Cloudflare Pages",
+        "Cloudflare Turnstile",
+        "Satellite map (Leaflet/Mapbox)"
+      ],
+      "categories": [
+        "web",
+        "security",
+        "expert"
+      ],
+      "creativity_score": 8,
+      "stars": 0,
+      "forks": 0,
+      "last_updated": "2025-12-01",
+      "is_private": true,
+      "readme_status": "good",
+      "featured": true,
+      "featured_order": 4,
+      "unique_aspects": "WordPress-to-static migration for a private security company — eliminates server costs, maximises uptime on Cloudflare's global CDN. Turnstile integration blocks bots without annoying CAPTCHAs. Interactive satellite map shows guard deployment pins for client transparency. Built for security firms needing a trustworthy, fast, low-maintenance web presence.",
+      "main_features": [
+        "WordPress-to-static conversion",
+        "Cloudflare Pages global CDN hosting",
+        "Cloudflare Turnstile bot protection",
+        "Interactive guard-pin satellite map",
+        "Zero server maintenance required"
+      ]
+    },
+    {
+      "name": "ai-email-notion-triage",
+      "title": "AI Email → Notion Triage Agent",
+      "description": "Automated email triage pipeline: Gmail Pub/Sub triggers push notifications, Gemini classifies and summarises each email, and the result is written to a Notion database — with prompt-injection-safe design.",
+      "github_url": "https://github.com/MS-Jahan/ai-email-notion-triage",
+      "demo_url": "",
+      "image": "assets/img/projects/ai-email-notion-triage.jpg",
+      "languages": [
+        "Python"
+      ],
+      "technologies": "Gmail Pub/Sub, Gemini AI, Notion API, Python",
+      "tech_stack": [
+        "Gmail API",
+        "Google Pub/Sub",
+        "Gemini AI",
+        "Notion API",
+        "Python",
+        "FastAPI"
+      ],
+      "categories": [
+        "automation",
+        "ai",
+        "creative",
+        "expert"
+      ],
+      "creativity_score": 10,
+      "stars": 0,
+      "forks": 0,
+      "last_updated": "2026-01-01",
+      "is_private": false,
+      "readme_status": "good",
+      "featured": true,
+      "featured_order": 5,
+      "unique_aspects": "Real-time email triage agent using Gmail push (Pub/Sub) instead of polling — near-zero latency. Gemini handles classification and summarisation with a prompt-injection-safe system prompt design. Results land in Notion for structured review. Built for professionals drowning in email who want AI-curated inbox zero without giving up control.",
+      "main_features": [
+        "Gmail Pub/Sub push (no polling — real-time)",
+        "Gemini AI classification + summarisation",
+        "Prompt-injection-safe prompt design",
+        "Notion database output",
+        "Fully automated zero-touch pipeline"
+      ]
+    },
+    {
+      "name": "whatsapp-message-summarizer",
+      "title": "WhatsApp Message Summarizer",
+      "description": "Daily automated summariser for WhatsApp group chats — Gemini multimodal AI reads exported chat logs (including images) and sends a concise daily digest.",
+      "github_url": "https://github.com/MS-Jahan/whatsapp-message-summarizer",
+      "demo_url": "",
+      "image": "assets/img/projects/whatsapp-summarizer.jpg",
+      "languages": [
+        "Python"
+      ],
+      "technologies": "Python, Gemini AI (multimodal), WhatsApp export parsing",
+      "tech_stack": [
+        "Python",
+        "Gemini AI (multimodal)",
+        "WhatsApp chat parser",
+        "Telegram Bot (delivery)"
+      ],
+      "categories": [
+        "automation",
+        "ai",
+        "bot",
+        "creative"
+      ],
+      "creativity_score": 9,
+      "stars": 0,
+      "forks": 0,
+      "last_updated": "2025-11-01",
+      "is_private": false,
+      "readme_status": "good",
+      "featured": true,
+      "featured_order": 6,
+      "unique_aspects": "Multimodal Gemini agent that understands both text and images in WhatsApp exports — not just text. Delivers a concise, structured daily digest so group members catch up in 30 seconds instead of scrolling hundreds of messages. Built for busy professionals in active group chats.",
+      "main_features": [
+        "WhatsApp chat export parsing (text + images)",
+        "Gemini multimodal AI summarisation",
+        "Daily automated digest delivery",
+        "Handles media-heavy chats",
+        "Configurable schedule"
+      ]
+    },
+    {
+      "name": "upwork-cover-letter-gen",
+      "title": "Upwork Cover Letter Generator",
+      "description": "FastAPI service that scrapes Upwork job listings (bypassing bot protection via FlareSolverr) and generates tailored cover letters using Gemini AI.",
+      "github_url": "https://github.com/MS-Jahan/upwork-cover-letter-gen",
+      "demo_url": "",
+      "image": "assets/img/projects/upwork-cover-letter-gen.jpg",
+      "languages": [
+        "Python"
+      ],
+      "technologies": "FastAPI, FlareSolverr, Gemini AI, Python",
+      "tech_stack": [
+        "FastAPI",
+        "FlareSolverr",
+        "Gemini AI",
+        "Python",
+        "Docker"
+      ],
+      "categories": [
+        "automation",
+        "ai",
+        "creative",
+        "expert"
+      ],
+      "creativity_score": 9,
+      "stars": 0,
+      "forks": 0,
+      "last_updated": "2025-09-01",
+      "is_private": false,
+      "readme_status": "good",
+      "featured": true,
+      "featured_order": 7,
+      "unique_aspects": "End-to-end automated cover letter pipeline for Upwork freelancers. FlareSolverr bypasses Cloudflare bot-protection to scrape job details; Gemini crafts a tailored, high-converting letter from the job description and a profile template. REST API makes it integrable with n8n/Make.com workflows. Built for freelancers who want to apply faster without sacrificing quality.",
+      "main_features": [
+        "Upwork job scraping via FlareSolverr (bot-bypass)",
+        "Gemini AI tailored letter generation",
+        "FastAPI REST interface",
+        "Profile template customisation",
+        "n8n/Make.com workflow-ready"
+      ]
+    },
     {
       "name": "Messenger-Message-Logger",
       "title": "Messenger Message Logger",

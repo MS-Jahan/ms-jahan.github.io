@@ -7,9 +7,10 @@ class ProjectsManager {
     constructor() {
         this.allProjects = [];
         this.filteredProjects = [];
+        this.featuredProjects = [];
         this.currentPage = 1;
         this.projectsPerPage = 9;
-        this.activeCategories = ['creative']; // Default filter
+        this.activeCategories = []; // No default filter — show all on load
         this.searchQuery = '';
         this.init();
     }
@@ -19,6 +20,7 @@ class ProjectsManager {
             await this.loadProjects();
             this.setupUI();
             this.applyFilters();
+            this.renderFeatured();
             this.renderProjects();
         } catch (error) {
             console.error('Failed to initialize projects:', error);
@@ -41,6 +43,12 @@ class ProjectsManager {
 
         // Convert to array and sort alphabetically
         this.categories = Array.from(categoriesSet).sort();
+
+        // Separate featured (flagship) projects from the rest
+        this.featuredProjects = this.allProjects
+            .filter(p => p.featured === true)
+            .sort((a, b) => (a.featured_order || 99) - (b.featured_order || 99));
+        this.allProjects = this.allProjects.filter(p => p.featured !== true);
     }
 
     setupUI() {
@@ -107,7 +115,13 @@ class ProjectsManager {
 
         // Find the section title and insert controls after it
         const sectionTitle = projectsSection.querySelector('.section-title');
-        sectionTitle.insertAdjacentHTML('afterend', controlsHTML);
+
+        // Insert featured band placeholder before controls
+        const featuredHTML = `
+            <div id="featuredBand" class="featured-band mb-5"></div>
+        `;
+        sectionTitle.insertAdjacentHTML('afterend', featuredHTML);
+        document.getElementById('featuredBand').insertAdjacentHTML('afterend', controlsHTML);
 
         // Remove old static projects
         const oldProjects = projectsSection.querySelectorAll('.row:not(.mb-3)');
@@ -181,6 +195,137 @@ class ProjectsManager {
                 this.renderProjects();
             });
         }
+    }
+
+    renderFeatured() {
+        const band = document.getElementById('featuredBand');
+        if (!band || this.featuredProjects.length === 0) return;
+
+        band.innerHTML = `
+            <div class="featured-band-header mb-3">
+                <h4 class="featured-band-title">
+                    <i class="bi bi-star-fill me-2"></i>Featured Projects
+                </h4>
+                <p class="featured-band-subtitle">Flagship work — click any card for full details</p>
+            </div>
+            <div class="row" id="featuredCards">
+                ${this.featuredProjects.map(p => this.createFeaturedCard(p)).join('')}
+            </div>
+        `;
+
+        // Attach click listeners to featured cards
+        band.querySelectorAll('.featured-card-clickable').forEach(el => {
+            el.addEventListener('click', () => {
+                const name = el.dataset.projectName;
+                const project = this.featuredProjects.find(p => p.name === name);
+                if (project) this.showProjectDetail(project);
+            });
+        });
+    }
+
+    createFeaturedCard(project) {
+        const techList = (project.tech_stack || project.technologies || '').slice
+            ? (Array.isArray(project.tech_stack) ? project.tech_stack.slice(0, 4).join(', ') : project.technologies)
+            : project.technologies;
+
+        const liveBtn = project.demo_url
+            ? `<a href="${project.demo_url}" class="btn btn-primary btn-sm" target="_blank" onclick="event.stopPropagation()">
+                   <i class="bi bi-box-arrow-up-right me-1"></i>Live Demo
+               </a>` : '';
+        const ghBtn = project.github_url
+            ? `<a href="${project.github_url}" class="btn btn-outline-secondary btn-sm" target="_blank" onclick="event.stopPropagation()" title="GitHub">
+                   <i class="bi bi-github"></i>
+               </a>` : '';
+
+        return `
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card featured-card h-100 featured-card-clickable" data-project-name="${project.name}" style="cursor:pointer;" title="Click for full details">
+                    <div class="featured-badge-wrap">
+                        <span class="featured-badge"><i class="bi bi-star-fill me-1"></i>Featured</span>
+                    </div>
+                    <img
+                        src="${project.image || ''}"
+                        class="card-img-top"
+                        alt="${project.title}"
+                        loading="lazy"
+                        onerror="this.src='https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png'"
+                    >
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">${project.title}</h5>
+                        <p class="card-text flex-grow-1">${this.truncateText(project.description, 120)}</p>
+                        <p class="card-text"><small class="text-muted">${techList || ''}</small></p>
+                        <div class="mt-auto d-flex gap-2" onclick="event.stopPropagation()">
+                            ${liveBtn}
+                            ${ghBtn}
+                            <button class="btn btn-sm btn-outline-info ms-auto" onclick="event.stopPropagation(); (()=>{const p=window._projectsManager.featuredProjects.find(x=>x.name==='${project.name}');if(p)window._projectsManager.showProjectDetail(p);})()">
+                                <i class="bi bi-info-circle me-1"></i>Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+    }
+
+    showProjectDetail(project) {
+        // Accept a project name string and resolve it
+        if (typeof project === 'string') {
+            project = this.allProjects.find(p => p.name === project)
+                || this.featuredProjects.find(p => p.name === project);
+        }
+        if (!project) return;
+
+        // Build modal if not present
+        let modal = document.getElementById('projectDetailModal');
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.innerHTML = `
+                <div class="modal fade" id="projectDetailModal" tabindex="-1" aria-labelledby="projectDetailLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content project-modal-content">
+                      <div class="modal-header project-modal-header">
+                        <h5 class="modal-title" id="projectDetailLabel"></h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body" id="projectDetailBody"></div>
+                      <div class="modal-footer project-modal-footer" id="projectDetailFooter"></div>
+                    </div>
+                  </div>
+                </div>
+            `;
+            document.body.appendChild(modal.firstElementChild);
+            modal = document.getElementById('projectDetailModal');
+        }
+
+        const techStack = Array.isArray(project.tech_stack)
+            ? project.tech_stack.map(t => `<span class="tech-chip">${t}</span>`).join('')
+            : `<span class="tech-chip">${project.technologies || ''}</span>`;
+
+        const mainFeatures = Array.isArray(project.main_features) && project.main_features.length
+            ? `<ul>${project.main_features.map(f => `<li>${f}</li>`).join('')}</ul>` : '';
+
+        document.getElementById('projectDetailLabel').textContent = project.title;
+        document.getElementById('projectDetailBody').innerHTML = `
+            <img src="${project.image || ''}" alt="${project.title}" class="img-fluid rounded mb-3 project-modal-img"
+                 onerror="this.style.display='none'">
+            <div class="mb-3">
+                <h6 class="modal-section-label">Overview</h6>
+                <p>${project.unique_aspects || project.description}</p>
+            </div>
+            ${mainFeatures ? `<div class="mb-3"><h6 class="modal-section-label">Key Features</h6>${mainFeatures}</div>` : ''}
+            <div class="mb-3">
+                <h6 class="modal-section-label">Tech Stack</h6>
+                <div class="tech-stack-chips">${techStack}</div>
+            </div>
+        `;
+        document.getElementById('projectDetailFooter').innerHTML = `
+            ${project.demo_url ? `<a href="${project.demo_url}" class="btn btn-primary" target="_blank"><i class="bi bi-box-arrow-up-right me-1"></i>Live Demo</a>` : ''}
+            ${project.github_url ? `<a href="${project.github_url}" class="btn btn-outline-light" target="_blank"><i class="bi bi-github me-1"></i>GitHub</a>` : ''}
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        `;
+
+        const bsModal = bootstrap.Modal.getOrCreate(modal);
+        bsModal.show();
     }
 
     toggleCategory(category) {
@@ -267,6 +412,16 @@ class ProjectsManager {
         }
 
         container.innerHTML = projectsToShow.map(project => this.createProjectCard(project)).join('');
+
+        // Make regular cards clickable to open detail modal
+        container.querySelectorAll('.project-card-clickable').forEach(el => {
+            el.addEventListener('click', () => {
+                const name = el.dataset.projectName;
+                const project = this.allProjects.find(p => p.name === name);
+                if (project) this.showProjectDetail(project);
+            });
+        });
+
         this.renderPagination();
     }
 
@@ -280,12 +435,23 @@ class ProjectsManager {
             return `<span class="badge ${badgeClass}">${cat}</span>`;
         }).join('');
 
-        const buttonText = project.demo_url && project.demo_url !== '' ? 'View Demo' : 'View Project';
-        const buttonUrl = project.demo_url && project.demo_url !== '' ? project.demo_url : project.github_url;
+        // Split into explicit Live Demo / GitHub buttons per the video rule
+        const liveBtn = project.demo_url && project.demo_url !== ''
+            ? `<a href="${project.demo_url}" class="btn btn-primary" target="_blank" onclick="event.stopPropagation()">
+                   <i class="bi bi-box-arrow-up-right me-1"></i>Live
+               </a>` : '';
+        const ghBtn = project.github_url
+            ? `<a href="${project.github_url}" class="btn btn-outline-secondary" target="_blank" title="GitHub" onclick="event.stopPropagation()">
+                   <i class="bi bi-github"></i>
+               </a>` : '';
+        const detailsBtn = (project.unique_aspects || (project.main_features && project.main_features.length) || project.tech_stack)
+            ? `<button class="btn btn-sm btn-outline-info ms-auto" onclick="event.stopPropagation(); window._projectsManager.showProjectDetail(${JSON.stringify(project.name).replace(/"/g,'&quot;')})" title="Details">
+                   <i class="bi bi-info-circle me-1"></i>Details
+               </button>` : '';
 
         return `
             <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
+                <div class="card h-100 project-card-clickable" data-project-name="${project.name}" style="cursor:pointer;" title="Click for details">
                     <img
                         src="${project.image}"
                         class="card-img-top"
@@ -303,14 +469,10 @@ class ProjectsManager {
                             <span class="description-full">${project.description}</span>
                         </p>
                         <p class="card-text">${techBadge}</p>
-                        <div class="mt-auto d-flex gap-2">
-                            <a href="${buttonUrl}" class="btn btn-primary flex-grow-1" target="_blank">
-                                ${buttonText}
-                            </a>
-                            ${project.github_url ?
-                                `<a href="${project.github_url}" class="btn btn-outline-secondary" target="_blank" title="View on GitHub">
-                                    <i class="bi bi-github"></i>
-                                </a>` : ''}
+                        <div class="mt-auto d-flex gap-2 align-items-center" onclick="event.stopPropagation()">
+                            ${liveBtn}
+                            ${ghBtn}
+                            ${detailsBtn}
                         </div>
                     </div>
                 </div>
@@ -418,10 +580,12 @@ class ProjectsManager {
 
 // Initialize when DOM is ready
 let projectsManager;
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-        projectsManager = new ProjectsManager();
-    });
-} else {
+function bootProjectsManager() {
     projectsManager = new ProjectsManager();
+    window._projectsManager = projectsManager; // exposed for inline onclick handlers
+}
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', bootProjectsManager);
+} else {
+    bootProjectsManager();
 }

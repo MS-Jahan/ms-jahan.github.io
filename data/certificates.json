@@ -1,0 +1,64 @@
+{
+  "certificates": [
+    {
+      "title": "Fundamentals of DevOps",
+      "issuer": "KodeKloud",
+      "date": "September 2024",
+      "credential_url": "https://learn.kodekloud.com/certificate/0af0dc58-48b1-4dbd-98be-bc5e3b998292"
+    },
+    {
+      "title": "GitHub Foundations",
+      "issuer": "GitHub (via Credly)",
+      "date": "April 2024",
+      "credential_url": "https://www.credly.com/badges/cf422c86-caa2-4751-abef-e139e3e2e6a2"
+    },
+    {
+      "title": "Full Stack Web Development (Python + JavaScript)",
+      "issuer": "Bohubrihi",
+      "date": "March 2024",
+      "credential_url": ""
+    },
+    {
+      "title": "Google Cybersecurity Professional Certificate",
+      "issuer": "Coursera / Google (via Credly)",
+      "date": "June 2023",
+      "credential_url": "https://www.credly.com/badges/6e53363d-2089-4834-bb44-a1f45322d581"
+    },
+    {
+      "title": "Android App Development",
+      "issuer": "NACTAR",
+      "date": "December 2020",
+      "credential_url": ""
+    }
+  ],
+  "achievements": [
+    {
+      "title": "ICPC Asia Dhaka Regional 2024",
+      "description": "Competed in the prestigious ICPC Asia Dhaka Regional contest."
+    },
+    {
+      "title": "CyberRaid CTF 2025 — 7th (Prelim) / 22nd (Final)",
+      "description": "Placed 7th in preliminary round and 22nd in the final round, Bangladesh Army organized CTF."
+    },
+    {
+      "title": "BUET CTF 2024 — 22nd Place",
+      "description": "Ranked 22nd in BUET's national CTF competition."
+    },
+    {
+      "title": "EWU NRF24 CTF — 10th Place",
+      "description": "Placed 10th at East West University's NRF24 CTF."
+    },
+    {
+      "title": "Zelf Hackathon 2.0 2024 — 3rd Place (Data Scraping)",
+      "description": "Won 3rd place in the Data Scraping track at Zelf Hackathon 2.0."
+    },
+    {
+      "title": "Phoenix Summit CTF 2024 — 10th Place",
+      "description": "Placed 10th at Phoenix Summit CTF."
+    },
+    {
+      "title": "MIST LeetCon 2023 — Finalist",
+      "description": "Selected as finalist at MIST LeetCon 2023 programming contest."
+    }
+  ]
+}

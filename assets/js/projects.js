@@ -338,7 +338,7 @@ class ProjectsManager {
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         `;
 
-        const bsModal = bootstrap.Modal.getOrCreate(modal);
+        const bsModal = bootstrap.Modal.getOrCreateInstance(modal);
         bsModal.show();
     }
 

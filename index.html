@@ -51,6 +51,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/projects-custom.css" rel="stylesheet">
 
   <title>Sarwar Jahan</title>
 
@@ -62,18 +63,6 @@
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
     rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/projects-custom.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Personal
@@ -108,7 +97,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link active" href="/">🏠 Home</a></li>
+          <li><a class="nav-link active" href="#header">🏠 Home</a></li>
           <li><a class="nav-link" href="#about">👨‍💻 About</a></li>
           <li><a class="nav-link" href="#resume">💼 Experience</a></li>
           <li><a class="nav-link" href="#certificates">🏆 Certificates</a></li>
@@ -265,18 +254,10 @@
       <div class="section-title">
         <h2>Testimonials</h2>
       </div>
-      <div
-        class="testimonials-slider swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events"
-        data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper"></div><div class="swiper-pagination"></div> swiper-pagination-clickable swiper-pagination-bullets"><span
-            class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button"
-            aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button"
-            aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button"
-            aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button"
-            aria-label="Go to slide 4"></span><span class="swiper-pagination-bullet" tabindex="0" role="button"
-            aria-label="Go to slide 5"></span></div>
+      <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="owl-carousel testimonials-carousel"></div>
     </div><!-- End Testimonials  -->
 
   </section>
@@ -545,30 +526,31 @@
         <div class="text-center"><button onclick="sendToTelegram()" type="submit">Send Message</button></div>
       </form>
     </div>
-  </section><!-- End Contact Section -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container footer-inner">
-      <h3>Sarwar Jahan</h3>
-      <p>Software Engineering Specialist &middot; Full-Stack, Automation &amp; AI</p>
-      <nav class="footer-nav">
-        <a href="#about">About</a>
-        <a href="#resume">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="footer-socials">
-        <a href="https://github.com/MS-Jahan" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
-        <a href="https://www.linkedin.com/in/mdsarwarjahan-sabit/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
-        <a href="https://www.fiverr.com/msjsabit" target="_blank" title="Fiverr"><i class="bi bi-bag"></i></a>
-        <a href="https://www.upwork.com/freelancers/~01ec8b257f52a4c62c" target="_blank" title="Upwork"><i class="bi bi-briefcase"></i></a>
-        <a href="https://vxlnce.com/" target="_blank" title="Agency"><i class="bi bi-globe"></i></a>
+    <!-- Footer inside contact so it's visible in SPA tab-switch layout -->
+    <footer id="footer">
+      <div class="container footer-inner">
+        <h3>Sarwar Jahan</h3>
+        <p>Software Engineering Specialist &middot; Full-Stack, Automation &amp; AI</p>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#resume">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-socials">
+          <a href="https://github.com/MS-Jahan" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/mdsarwarjahan-sabit/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.fiverr.com/msjsabit" target="_blank" title="Fiverr"><i class="bi bi-bag"></i></a>
+          <a href="https://www.upwork.com/freelancers/~01ec8b257f52a4c62c" target="_blank" title="Upwork"><i class="bi bi-briefcase"></i></a>
+          <a href="https://vxlnce.com/" target="_blank" title="Agency"><i class="bi bi-globe"></i></a>
+        </div>
+        <div class="footer-credit">&copy; <span id="footer-year"></span> Md. Sarwar Jahan Sabit &middot; Built by Sarwar Jahan</div>
       </div>
-      <div class="footer-credit">&copy; <span id="footer-year"></span> Md. Sarwar Jahan Sabit &middot; Built by Sarwar Jahan</div>
-    </div>
-  </footer><!-- End Footer -->
+    </footer><!-- End Footer -->
+
+  </section><!-- End Contact Section -->
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -598,6 +580,16 @@
 
     // Footer year
     (function(){var y=document.getElementById('footer-year');if(y){y.textContent=new Date().getFullYear();}})();
+
+    // Make .btn-scrollto hero buttons trigger the SPA section-show mechanism
+    document.addEventListener('click', function(e) {
+      var btn = e.target.closest('.btn-scrollto');
+      if (!btn) return;
+      var hash = btn.getAttribute('href');
+      if (!hash || !hash.startsWith('#')) return;
+      var navLink = document.querySelector('#navbar .nav-link[href="' + hash + '"]');
+      if (navLink) { e.preventDefault(); navLink.click(); }
+    });
 
   </script>
   <script>

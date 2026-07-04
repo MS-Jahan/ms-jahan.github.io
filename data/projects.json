@@ -29,7 +29,7 @@
       "description": "Hybrid WordPress+React agency site for vxlnce.com clients. Combines headless WP CMS with a modern React frontend — 8 service pages, AI-generated blog posts, and Calendly booking integration.",
       "github_url": "",
       "demo_url": "https://growthyourbusiness.com",
-      "image": "assets/img/projects/growth-your-business.jpg",
+      "image": "assets/img/projects/growth-your-business.svg",
       "languages": [
         "TypeScript",
         "PHP"
@@ -75,7 +75,7 @@
       "description": "Hunting community platform spanning 11 US states. Combines a BuddyBoss/WooCommerce WordPress core with a custom React + NestJS backend featuring real-time chat, Stripe payments, and a Mapbox team-units map.",
       "github_url": "",
       "demo_url": "https://jointeamhunt.com",
-      "image": "assets/img/projects/jointeamhunt.jpg",
+      "image": "assets/img/projects/jointeamhunt.svg",
       "languages": [
         "TypeScript",
         "PHP"
@@ -122,7 +122,7 @@
       "description": "Three integrated web applications + admin portal for Rayyan Group: farm management, feed-store operations, and FMCG distribution — all with QR receipts and role-based dashboards.",
       "github_url": "",
       "demo_url": "",
-      "image": "assets/img/projects/rayyan-group.jpg",
+      "image": "assets/img/projects/rayyan-group.svg",
       "languages": [
         "Python"
       ],
@@ -164,7 +164,7 @@
       "description": "High-performance static site for a private security firm — converted from WordPress to pure static, hosted on Cloudflare Pages with Turnstile bot-protection and an interactive guard-pin satellite map.",
       "github_url": "",
       "demo_url": "",
-      "image": "assets/img/projects/valcor-group.jpg",
+      "image": "assets/img/projects/valcor-group.svg",
       "languages": [
         "JavaScript",
         "HTML"
@@ -204,7 +204,7 @@
       "description": "Automated email triage pipeline: Gmail Pub/Sub triggers push notifications, Gemini classifies and summarises each email, and the result is written to a Notion database — with prompt-injection-safe design.",
       "github_url": "https://github.com/MS-Jahan/ai-email-notion-triage",
       "demo_url": "",
-      "image": "assets/img/projects/ai-email-notion-triage.jpg",
+      "image": "assets/img/projects/ai-email-notion-triage.svg",
       "languages": [
         "Python"
       ],
@@ -246,7 +246,7 @@
       "description": "Daily automated summariser for WhatsApp group chats — Gemini multimodal AI reads exported chat logs (including images) and sends a concise daily digest.",
       "github_url": "https://github.com/MS-Jahan/whatsapp-message-summarizer",
       "demo_url": "",
-      "image": "assets/img/projects/whatsapp-summarizer.jpg",
+      "image": "assets/img/projects/whatsapp-message-summarizer.svg",
       "languages": [
         "Python"
       ],
@@ -286,7 +286,7 @@
       "description": "FastAPI service that scrapes Upwork job listings (bypassing bot protection via FlareSolverr) and generates tailored cover letters using Gemini AI.",
       "github_url": "https://github.com/MS-Jahan/upwork-cover-letter-gen",
       "demo_url": "",
-      "image": "assets/img/projects/upwork-cover-letter-gen.jpg",
+      "image": "assets/img/projects/upwork-cover-letter-gen.svg",
       "languages": [
         "Python"
       ],

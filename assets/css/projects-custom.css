@@ -1013,6 +1013,68 @@ html {
 }
 
 .footer-credit {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.55);
   font-size: 0.8rem;
+}
+
+/* ===== More Projects Button ===== */
+.more-projects-btn {
+  display: inline-block;
+  background: transparent;
+  color: #18d26e;
+  border: 2px solid #18d26e;
+  padding: 12px 32px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.more-projects-btn:hover {
+  background: #18d26e;
+  color: #040404;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(24, 210, 110, 0.4);
+}
+
+/* ===== Responsive extras (T2.4) ===== */
+@media (max-width: 375px) {
+  .projects .card-img-top,
+  .projects-custom.css .card-img-top {
+    height: 160px;
+  }
+
+  .hero-btn-primary,
+  .hero-btn-secondary {
+    padding: 10px 18px;
+    font-size: 0.875rem;
+  }
+
+  .cert-card {
+    padding: 16px;
+  }
+
+  .achievement-item {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-modal-img {
+    max-height: 220px;
+  }
+
+  .featured-band-title {
+    font-size: 1.3rem;
+  }
+
+  .footer-nav {
+    gap: 12px;
+  }
+
+  .footer-socials {
+    gap: 14px;
+  }
 }

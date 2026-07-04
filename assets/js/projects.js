@@ -49,6 +49,13 @@ class ProjectsManager {
             .filter(p => p.featured === true)
             .sort((a, b) => (a.featured_order || 99) - (b.featured_order || 99));
         this.allProjects = this.allProjects.filter(p => p.featured !== true);
+
+        // Sort non-featured by stars desc, then last_updated desc
+        this.allProjects.sort((a, b) => {
+            const starDiff = (b.stars || 0) - (a.stars || 0);
+            if (starDiff !== 0) return starDiff;
+            return (b.last_updated || '').localeCompare(a.last_updated || '');
+        });
     }
 
     setupUI() {

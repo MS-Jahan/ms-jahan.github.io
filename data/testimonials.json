@@ -1,0 +1,46 @@
+{
+  "testimonials": [
+    {
+      "name": "Avinash Nayak",
+      "role": "Senior Quality Engineer at Micron",
+      "role_html": "Senior Quality Engineer at Micron",
+      "image": "assets/img/testimonials/testimonials-1.jpg",
+      "quote": "I recently had the pleasure of working with Sarwar on the workflow for make.com. Their expertise, attention to detail, and dedication resulted in a flawless execution. The end product exceeded all our expectations. I was particularly impressed with how they tackled challenges and ensured that our objectives were met. I would highly recommend Sarwar for any project, and I look forward to collaborating with them again in the future. Truly top-notch work! Furthermore, Sarwar's exceptional communication skills made the collaboration seamless and efficient. At every stage, they kept us informed, welcomed feedback, and demonstrated a profound understanding of our vision. HIGHLY RECOMMEND!"
+    },
+    {
+      "name": "Joshy",
+      "role": "Web Designer and Online Marketer",
+      "role_html": "Web Designer and Online Marketer",
+      "image": "assets/img/testimonials/testimonials-2.jpg",
+      "quote": "His knowledge is very good and he could help me directly via messaging before i had even ordered a gig. I could have already used that information and do it myself, and I think that service of him to really understand my problem and help me out directly without asking for money and a gig first is what I really liked about our work together. Plus he is very skilled in what he does and he could find me a solution within a few hours."
+    },
+    {
+      "name": "Joanna Valenton",
+      "role": "CEO @ AdvantEdge",
+      "role_html": "CEO @ <a href=\"https://www.advantedge.com.ph/\">AdvantEdge</a>",
+      "image": "assets/img/testimonials/testimonials-3.jpg",
+      "quote": "Sabit is super duper great at his job! I can recommend him to anyone who needs a service like he offers! He is communicative he do an explanation videos just for me to understand and clarify things with him. He really provides everything I need! Thank you Sabit, you’re the best!"
+    },
+    {
+      "name": "Dusanbo",
+      "role": "Flutter Developer",
+      "role_html": "Flutter Developer",
+      "image": "assets/img/testimonials/testimonials-4.jpg",
+      "quote": "Very professional, experienced, and patient."
+    },
+    {
+      "name": "Dare Alex",
+      "role": "WordPress Developer",
+      "role_html": "WordPress Developer",
+      "image": "assets/img/testimonials/testimonials-5.jpg",
+      "quote": "He is an amazing person he helped me creating the script and still put me through how to use, will use again and will definitely recommend. thanks man"
+    },
+    {
+      "name": "design17 (Anonymous)",
+      "role": "Anonymous Client",
+      "role_html": "Anonymous Client",
+      "image": "assets/img/testimonials/pro-pic-anonymous.jpg",
+      "quote": "msjsabit, nice guy, hard working, knows his stuff. It is not easy to honest find an honest reliable developer these days. msjsabit always responded and did exactly what I needed plus more. I am looking forward to my next project with him. Thank you 10/10"
+    }
+  ]
+}

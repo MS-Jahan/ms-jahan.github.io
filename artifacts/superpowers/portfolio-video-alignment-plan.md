@@ -25,7 +25,7 @@ Every task below is scoped to **1-2 files** and is independently assignable to a
 
 ### T1.1 Fix stale About facts
 - Files: `index.html`
-- Action: In `#about`, replace hardcoded `Age: 21` with correct current age (recompute; owner CV baseline — set to current value, do not leave `21`). Fix Awards counter (`.counts` last box) `data-purecounter-end="0"` and literal `0` — set to a real achievements count (>=7, matches Achievements list in T1.8) with label "Awards / Achievements". Remove ambiguous experience phrasing ("over two decades", ".6 years") in the Resume `Sumary` block; state clear "3+ years professional experience".
+- Action: In `#about`, replace hardcoded `Age: 21` with correct current age (recompute; owner CV baseline — set to current value, do not leave `21`). Fix Awards counter (`.counts` last box) `data-purecounter-end="0"` and literal `0` — set to a real achievements count (>=7, matches Achievements list in T1.8) with label "Awards / Achievements". Remove ambiguous experience phrasing ("over two decades", ".6 years") in the Resume `Summary` block; state clear "3+ years professional experience".
 - Dependencies: none.
 - Acceptance: No literal `21` age; awards counter shows non-zero real number; no "two decades"/ambiguous wording remains.
 

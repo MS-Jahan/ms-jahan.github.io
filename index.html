@@ -38,7 +38,7 @@
 
   <!-- Google Fonts -->
   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -61,7 +61,7 @@
 
   <!-- Google Fonts -->
   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
     rel="stylesheet">
 
   <!-- =======================================================
@@ -88,7 +88,9 @@
       <h2>I'm a passionate <span id='profession'></span></h2>
 
       <div class="hero-cta-row">
-        <img src="assets/img/me.jpg" alt="Sarwar Jahan" class="hero-photo" loading="lazy" />
+        <div class="hero-photo-wrapper">
+          <img src="assets/img/me.jpg" alt="Sarwar Jahan" class="hero-photo" loading="lazy" />
+        </div>
         <div class="hero-cta-buttons">
           <a href="#contact" class="btn-scrollto hero-btn-primary">Get in Touch</a>
           <a href="https://cv.sabit.dev" target="_blank" class="hero-btn-secondary"><i class="bi bi-download me-1"></i>View CV</a>
@@ -122,7 +124,7 @@
 
     <!-- ======= About Me ======= -->
     <div class="about-me container">
-      <div class="section-title">
+      <div class="section-title" data-comment="// about.md">
         <h2>About</h2>
         <p>Learn more about me</p>
       </div>
@@ -194,7 +196,7 @@
 
     <!-- ======= Skills  ======= -->
     <div class="skills container">
-      <div class="section-title">
+      <div class="section-title" data-comment="// skills.json">
         <h2>Skills</h2>
       </div>
       <div id="skills-grid" class="container"></div>
@@ -202,7 +204,7 @@
 
     <!-- ======= Interests ======= -->
     <div class="interests container">
-      <div class="section-title">
+      <div class="section-title" data-comment="// config.interests">
         <h2>Interests</h2>
       </div>
       <div class="row">
@@ -251,7 +253,7 @@
 
     <!-- ======= Testimonials ======= -->
     <div class="testimonials container">
-      <div class="section-title">
+      <div class="section-title" data-comment="// reviews[]">
         <h2>Testimonials</h2>
       </div>
       <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
@@ -266,9 +268,9 @@
   <!-- ======= Resume Section ======= -->
   <section id="resume" class="resume">
     <div class="container">
-      <div class="section-title">
-        <h2>Resume</h2>
-        <p>Check My Resume</p>
+      <div class="section-title" data-comment="// experience.log">
+        <h2>Experience</h2>
+        <p>Professional History</p>
         <p class="mt-3" style="font-size: 0.95em; color: rgba(255,255,255,0.7);">
           Full CV: <a href="https://cv.sabit.dev" target="_blank">cv.sabit.dev</a> &middot; Resume: <a href="https://resume.sabit.dev" target="_blank">resume.sabit.dev</a>
         </p>
@@ -356,9 +358,9 @@
   <!-- ======= Services Section ======= -->
   <section id="services" class="services">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title" data-comment="// services.offer()">
         <h2>Services</h2>
-        <p>My Services</p>
+        <p>What I Build</p>
       </div>
       <!-- <br><iframe title="fiverr_affiliate"
         src="https://www.fiverr.com/gig_widgets?id=U2FsdGVkX19g0PRzc/oowWa/psM+fd1YtFkADpB0dXQBc7AvOHzUeT/JJLFzNwV79Gm0nyMUwqdIadf/y9wG2LmEhdzY9u5Z2yLK3paKER5nPpr3/qd9cBbdXuSBnOM2ptcgeuwcbgFImfQrRkNHEowefZB4Xxp7JKuqtge/pMl21J466GKp/8jcS/byeQ33NdaoJIR5jQo7M1kFVWyhAdyrFqKD7WEBttLczCgTsAPK3UBc/EWnOKrQidmZJzIN+ay/9+1Yjazno7+roUWHSLIvfo8egl2NxT+rnKpv4Maaz40L8WGx2dxmNsXHxKD0ENTIz4Nbm8l1YIuIXPU0sorW9045WU+WHE3udNT57DBlOmMDNyqG37QECIKJj2Iidx6Ou83ZVVuAfgXURy+Z2DVGMiUkC2J3CC8nPiW8+PDjVoh5KtG3bUDSnjtbesdAPdHjjOkU7Zy4OVto11/DbTnFlzjTZcXFE2HJ5Pj0K/RcEnMaddAYLY+emaEPt707Br4/U9PejN7BiqLCKnGLhTG/Vp9y6fhGQW8vtmgkNPc=&amp;affiliate_id=413728&amp;strip_google_tagmanager=true"
@@ -436,7 +438,7 @@
   <!-- ======= Certificates & Achievements Section ======= -->
   <section id="certificates" class="certificates">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title" data-comment="// certs.verified = true">
         <h2>Certificates &amp; Achievements</h2>
         <p>Verified credentials &amp; competition results</p>
       </div>
@@ -448,9 +450,9 @@
   <!-- ======= Projects Section ======= -->
   <section id="projects" class="projects">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title" data-comment="// projects.json → render()">
         <h2>Projects</h2>
-        <p>My Recent Works</p>
+        <p>Things I've Built</p>
       </div>
 
       <!-- Projects will be loaded dynamically by projects.js -->
@@ -466,9 +468,9 @@
   <!-- ======= Contact Section ======= -->
   <section id="contact" class="contact">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title" data-comment="// contact.send()">
         <h2>Contact</h2>
-        <p>Contact Me</p>
+        <p>Get in Touch</p>
       </div>
       <div class="row mt-2">
         <div class="col-md-6 d-flex align-items-stretch">

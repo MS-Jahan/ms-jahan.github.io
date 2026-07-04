@@ -121,7 +121,7 @@
       "title": "Rayyan Group — 3-App Business Suite",
       "description": "Three integrated web applications + admin portal for Rayyan Group: farm management, feed-store operations, and FMCG distribution — all with QR receipts and role-based dashboards.",
       "github_url": "",
-      "demo_url": "",
+      "demo_url": "https://rayanagro.group",
       "image": "assets/img/projects/rayyan-group.svg",
       "languages": [
         "Python"

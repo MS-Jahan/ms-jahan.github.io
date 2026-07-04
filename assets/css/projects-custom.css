@@ -1429,3 +1429,6 @@ html {
     gap: 14px;
   }
 }
+
+/* F1: hide hero CTA when compact header-top state */
+#header.header-top .hero-cta-row { display: none !important; }

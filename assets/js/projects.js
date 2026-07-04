@@ -239,7 +239,7 @@ class ProjectsManager {
             ? `<a href="${project.demo_url}" class="btn btn-primary btn-sm" target="_blank" onclick="event.stopPropagation()">
                    <i class="bi bi-box-arrow-up-right me-1"></i>Live Demo
                </a>` : '';
-        const ghBtn = project.github_url
+        const ghBtn = project.github_url && !project.is_private
             ? `<a href="${project.github_url}" class="btn btn-outline-secondary btn-sm" target="_blank" onclick="event.stopPropagation()" title="GitHub">
                    <i class="bi bi-github"></i>
                </a>` : '';
@@ -304,12 +304,18 @@ class ProjectsManager {
             modal = document.getElementById('projectDetailModal');
         }
 
-        const techStack = Array.isArray(project.tech_stack)
+        const techStack = Array.isArray(project.tech_stack) && project.tech_stack.length
             ? project.tech_stack.map(t => `<span class="tech-chip">${t}</span>`).join('')
-            : `<span class="tech-chip">${project.technologies || ''}</span>`;
+            : (project.technologies ? `<span class="tech-chip">${project.technologies}</span>` : '');
 
         const mainFeatures = Array.isArray(project.main_features) && project.main_features.length
             ? `<ul>${project.main_features.map(f => `<li>${f}</li>`).join('')}</ul>` : '';
+
+        // Fallback meta line for projects without rich detail (stars/forks/last updated)
+        const hasStars = (typeof project.stars === 'number' && project.stars > 0) || project.forks;
+        const metaLine = (!project.unique_aspects && hasStars)
+            ? `<p class="text-muted small"><i class="bi bi-star me-1"></i>${project.stars || 0} stars &middot; ${project.forks || 0} forks &middot; updated ${project.last_updated || 'n/a'}</p>`
+            : '';
 
         document.getElementById('projectDetailLabel').textContent = project.title;
         document.getElementById('projectDetailBody').innerHTML = `
@@ -318,16 +324,17 @@ class ProjectsManager {
             <div class="mb-3">
                 <h6 class="modal-section-label">Overview</h6>
                 <p>${project.unique_aspects || project.description}</p>
+                ${metaLine}
             </div>
             ${mainFeatures ? `<div class="mb-3"><h6 class="modal-section-label">Key Features</h6>${mainFeatures}</div>` : ''}
-            <div class="mb-3">
+            ${techStack ? `<div class="mb-3">
                 <h6 class="modal-section-label">Tech Stack</h6>
                 <div class="tech-stack-chips">${techStack}</div>
-            </div>
+            </div>` : ''}
         `;
         document.getElementById('projectDetailFooter').innerHTML = `
             ${project.demo_url ? `<a href="${project.demo_url}" class="btn btn-primary" target="_blank"><i class="bi bi-box-arrow-up-right me-1"></i>Live Demo</a>` : ''}
-            ${project.github_url ? `<a href="${project.github_url}" class="btn btn-outline-light" target="_blank"><i class="bi bi-github me-1"></i>GitHub</a>` : ''}
+            ${(project.github_url && !project.is_private) ? `<a href="${project.github_url}" class="btn btn-outline-light" target="_blank"><i class="bi bi-github me-1"></i>GitHub</a>` : ''}
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         `;
 
@@ -447,14 +454,13 @@ class ProjectsManager {
             ? `<a href="${project.demo_url}" class="btn btn-primary" target="_blank" onclick="event.stopPropagation()">
                    <i class="bi bi-box-arrow-up-right me-1"></i>Live
                </a>` : '';
-        const ghBtn = project.github_url
+        const ghBtn = project.github_url && !project.is_private
             ? `<a href="${project.github_url}" class="btn btn-outline-secondary" target="_blank" title="GitHub" onclick="event.stopPropagation()">
                    <i class="bi bi-github"></i>
                </a>` : '';
-        const detailsBtn = (project.unique_aspects || (project.main_features && project.main_features.length) || project.tech_stack)
-            ? `<button class="btn btn-sm btn-outline-info ms-auto" onclick="event.stopPropagation(); window._projectsManager.showProjectDetail(${JSON.stringify(project.name).replace(/"/g,'&quot;')})" title="Details">
+        const detailsBtn = `<button class="btn btn-sm btn-outline-info ms-auto" onclick="event.stopPropagation(); window._projectsManager.showProjectDetail(${JSON.stringify(project.name).replace(/"/g,'&quot;')})" title="Details">
                    <i class="bi bi-info-circle me-1"></i>Details
-               </button>` : '';
+               </button>`;
 
         return `
             <div class="col-lg-4 col-md-6 mb-4">
@@ -549,8 +555,6 @@ class ProjectsManager {
                 if (page && page !== this.currentPage) {
                     this.currentPage = page;
                     this.renderProjects();
-                    // Scroll to projects section
-                    document.querySelector('#projects').scrollIntoView({ behavior: 'smooth' });
                 }
             });
         });

@@ -1310,6 +1310,8 @@ html {
   #header h2 span {
     display: block;
     width: fit-content;
+    min-width: 20px;
+    min-height: 38px;
     margin: 4px auto 0;
   }
 }

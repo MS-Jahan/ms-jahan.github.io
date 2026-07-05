@@ -1297,17 +1297,19 @@ html {
     justify-content: center;
     text-align: center;
   }
-  /* Drop the rotating conic-gradient ring on small screens — reads as a
-     stray rainbow/pie-chart shape rather than a border at this size */
-  .hero-photo-wrapper::before {
-    display: none;
-  }
+  /* Drop the hero photo entirely on small screens */
   .hero-photo-wrapper {
-    box-shadow: none;
+    display: none;
   }
   /* Keep the typed profession line from wrapping mid-word on narrow phones */
   #header h2 {
     font-size: 14px;
+  }
+  /* Typed word on its own line so "I'm a passionate" stops shifting position
+     as the typed string grows/shrinks */
+  #header h2 span {
+    display: block;
+    margin-top: 4px;
   }
 }
 

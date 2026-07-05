@@ -1,11 +1,11 @@
 {
   "metadata": {
     "generated": "2025-10-15T18:11:16.308414",
-    "total_projects": 53,
+    "total_projects": 54,
     "source": "MS-Jahan GitHub repositories",
     "version": "1.0",
     "generated_by": "Claude Code",
-    "featured_count": 7
+    "featured_count": 8
   },
   "categories": [
     "ai",
@@ -23,6 +23,57 @@
     "web"
   ],
   "projects": [
+    {
+      "name": "kathasync",
+      "title": "KathaSync",
+      "description": "Bangladesh-first AI voice-to-text platform that turns Bangla, English, and Banglish (mixed) speech into clean notes, summaries, and translations — with an async chunked pipeline for multi-hour meeting recordings.",
+      "github_url": "",
+      "demo_url": "https://kathasync.com",
+      "image": "assets/img/projects/kathasync.png",
+      "languages": [
+        "TypeScript",
+        "Python"
+      ],
+      "technologies": "React, TypeScript, Vite, Tailwind CSS, shadcn/ui, Supabase, LLM-based transcription, Google Cloud Run, Docker",
+      "tech_stack": [
+        "React 18",
+        "TypeScript",
+        "Vite",
+        "Tailwind CSS",
+        "shadcn/ui (Radix UI)",
+        "TanStack Query",
+        "React Hook Form + Zod",
+        "Framer Motion",
+        "Supabase (Postgres, Auth, Storage, Edge Functions/Deno)",
+        "LLM-based speech transcription engine",
+        "Google Cloud Run + Docker (Python/ffmpeg worker)",
+        "Google Cloud Storage",
+        "bKash payment verification",
+        "BulkSMSBD OTP"
+      ],
+      "categories": [
+        "ai",
+        "web",
+        "expert"
+      ],
+      "creativity_score": 10,
+      "stars": 0,
+      "forks": 0,
+      "last_updated": "2026-07-05",
+      "is_private": true,
+      "readme_status": "good",
+      "featured": true,
+      "featured_order": 1,
+      "unique_aspects": "Bangladesh-first voice-to-text product built around mixed Bangla/English/Banglish speech via an LLM-based transcription engine. Long recordings (multi-hour meetings) are split by a Python/ffmpeg Cloud Run worker and transcribed asynchronously with live chunk-progress polling. Payment collection runs on a manual bKash SMS-verification webhook and auth uses phone OTP over BulkSMSBD — both built for a market where card payments and email-first auth aren't the norm.",
+      "main_features": [
+        "Bangla / English / Banglish mixed-language transcription via LLM",
+        "Async chunked pipeline for multi-hour meeting recordings (Cloud Run + ffmpeg)",
+        "AI-generated summaries, notes, and translations",
+        "bKash SMS-verified payment webhook",
+        "Phone OTP signup/login via BulkSMSBD",
+        "Usage-based plans with minute quotas and admin billing dashboard"
+      ]
+    },
     {
       "name": "growth-your-business",
       "title": "Growth Your Business",
@@ -58,7 +109,7 @@
       "is_private": true,
       "readme_status": "good",
       "featured": true,
-      "featured_order": 1,
+      "featured_order": 2,
       "unique_aspects": "Headless hybrid architecture: WordPress handles content management while React 19 delivers a blazing-fast, animated frontend. Built for a digital marketing agency with 8 full service pages, Gemini-powered AI blog generation, and seamless Calendly scheduling. Designed for business owners who need a professional web presence with zero operational complexity.",
       "main_features": [
         "Headless WordPress + React 19 hybrid architecture",
@@ -105,7 +156,7 @@
       "is_private": true,
       "readme_status": "good",
       "featured": true,
-      "featured_order": 2,
+      "featured_order": 3,
       "unique_aspects": "Full-stack hunting community for US sportsmen — WordPress for community features (BuddyBoss groups, WooCommerce memberships) paired with a custom NestJS microservice for real-time chat, team formation, Stripe subscriptions, and a Mapbox interactive map of team units across 11 US states. Built for hunting enthusiasts who want to find, form, and coordinate hunting teams.",
       "main_features": [
         "BuddyBoss community + WooCommerce memberships",
@@ -147,7 +198,7 @@
       "is_private": true,
       "readme_status": "good",
       "featured": true,
-      "featured_order": 3,
+      "featured_order": 4,
       "unique_aspects": "Enterprise-grade suite of 3 business apps (farm management, feed store, FMCG distribution) for a real Bangladeshi conglomerate. Each app has role-based dashboards and QR-code receipts. Containerised with Docker and deployed via Coolify self-hosted PaaS. Built for business owners who need reliable, private, on-premise business tooling.",
       "main_features": [
         "Farm management app with inventory tracking",
@@ -188,7 +239,7 @@
       "is_private": true,
       "readme_status": "good",
       "featured": true,
-      "featured_order": 4,
+      "featured_order": 5,
       "unique_aspects": "WordPress-to-static migration for a private security company — eliminates server costs, maximises uptime on Cloudflare's global CDN. Turnstile integration blocks bots without annoying CAPTCHAs. Interactive satellite map shows guard deployment pins for client transparency. Built for security firms needing a trustworthy, fast, low-maintenance web presence.",
       "main_features": [
         "WordPress-to-static conversion",
@@ -230,7 +281,7 @@
       "is_private": false,
       "readme_status": "good",
       "featured": true,
-      "featured_order": 5,
+      "featured_order": 6,
       "unique_aspects": "Real-time email triage agent using Gmail push (Pub/Sub) instead of polling — near-zero latency. Gemini handles classification and summarisation with a prompt-injection-safe system prompt design. Results land in Notion for structured review. Built for professionals drowning in email who want AI-curated inbox zero without giving up control.",
       "main_features": [
         "Gmail Pub/Sub push (no polling — real-time)",
@@ -270,7 +321,7 @@
       "is_private": false,
       "readme_status": "good",
       "featured": true,
-      "featured_order": 6,
+      "featured_order": 7,
       "unique_aspects": "Multimodal Gemini agent that understands both text and images in WhatsApp exports — not just text. Delivers a concise, structured daily digest so group members catch up in 30 seconds instead of scrolling hundreds of messages. Built for busy professionals in active group chats.",
       "main_features": [
         "WhatsApp chat export parsing (text + images)",
@@ -311,7 +362,7 @@
       "is_private": false,
       "readme_status": "good",
       "featured": true,
-      "featured_order": 7,
+      "featured_order": 8,
       "unique_aspects": "End-to-end automated cover letter pipeline for Upwork freelancers. FlareSolverr bypasses Cloudflare bot-protection to scrape job details; Gemini crafts a tailored, high-converting letter from the job description and a profile template. REST API makes it integrable with n8n/Make.com workflows. Built for freelancers who want to apply faster without sacrificing quality.",
       "main_features": [
         "Upwork job scraping via FlareSolverr (bot-bypass)",

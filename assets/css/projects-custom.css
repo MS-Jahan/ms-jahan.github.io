@@ -161,13 +161,21 @@ a:hover { color: var(--accent-light); }
 .hero-btn-secondary:hover {
   border-color: var(--accent) !important;
   color: var(--accent-light) !important;
-  background: var(--accent-dim) !important;
+  background: rgba(4, 4, 4, 0.75) !important;
+}
+
+/* Solid dark backdrop so the button reads over any part of the busy photo */
+.hero-btn-secondary {
+  background: rgba(4, 4, 4, 0.55) !important;
 }
 
 /* ── Navbar ── */
+/* No backdrop-filter here: it makes #header the containing block for its
+   position:fixed mobile nav overlay, shrinking the full-screen menu down
+   to the header's own 80px box. Background is already 97% opaque so the
+   blur wasn't buying much. */
 #header.header-top {
   background: rgba(6, 9, 15, 0.97) !important;
-  backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -1288,6 +1296,18 @@ html {
   .hero-cta-row {
     justify-content: center;
     text-align: center;
+  }
+  /* Drop the rotating conic-gradient ring on small screens — reads as a
+     stray rainbow/pie-chart shape rather than a border at this size */
+  .hero-photo-wrapper::before {
+    display: none;
+  }
+  .hero-photo-wrapper {
+    box-shadow: none;
+  }
+  /* Keep the typed profession line from wrapping mid-word on narrow phones */
+  #header h2 {
+    font-size: 14px;
   }
 }
 

@@ -279,18 +279,30 @@ h6 {
   transition: all 0.3s ease-in-out 0s;
 }
 
-.navbar a:hover:before,
-.navbar li:hover>a:before,
 .navbar .active:before {
   visibility: visible;
   width: 25px;
 }
 
-.navbar a:hover,
 .navbar .active,
-.navbar .active:focus,
-.navbar li:hover>a {
+.navbar .active:focus {
   color: #fff;
+}
+
+/* Hover-only styles gated to real pointer devices — on touch, :hover has no
+   mouseleave event to clear it, so it "sticks" on whichever link was last
+   tapped (looked like a permanently highlighted nav item on mobile). */
+@media (hover: hover) and (pointer: fine) {
+  .navbar a:hover:before,
+  .navbar li:hover>a:before {
+    visibility: visible;
+    width: 25px;
+  }
+
+  .navbar a:hover,
+  .navbar li:hover>a {
+    color: #fff;
+  }
 }
 
 /**

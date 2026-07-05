@@ -1309,7 +1309,8 @@ html {
      as the typed string grows/shrinks */
   #header h2 span {
     display: block;
-    margin-top: 4px;
+    width: fit-content;
+    margin: 4px auto 0;
   }
 }
 

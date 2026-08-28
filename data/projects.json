@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "generated": "2025-10-15T18:11:16.308414",
-    "total_projects": 54,
+    "generated": "2026-08-28T17:45:14.515337+00:00",
+    "total_projects": 55,
     "source": "MS-Jahan GitHub repositories",
     "version": "1.0",
     "generated_by": "Claude Code",
-    "featured_count": 8
+    "featured_count": 9
   },
   "categories": [
     "ai",
@@ -210,6 +210,53 @@
       ]
     },
     {
+      "name": "rentnroam",
+      "title": "RentNRoam — Gear Rental Marketplace",
+      "description": "Full-stack sports & outdoor gear rental marketplace with a complete rent→pay→fulfill→review loop. Customers browse a 15-item catalog with filters, book rentals, and pay via Stripe Checkout (test mode); providers manage inventory and orders; admins moderate users, gear, and rentals — all with role-based dashboards and analytics.",
+      "github_url": "https://github.com/MS-Jahan/rentnroam-frontend",
+      "demo_url": "https://rentnroam-frontend.vercel.app",
+      "image": "assets/img/projects/rentnroam.svg",
+      "languages": [
+        "TypeScript"
+      ],
+      "technologies": "Next.js 15, React 19, Tailwind CSS 4, Express 5, TypeScript, Prisma 6, PostgreSQL (Neon), Stripe, JWT, Swagger, Vercel",
+      "tech_stack": [
+        "Next.js 15 (App Router, Turbopack, React 19)",
+        "Tailwind CSS 4 + Barlow Condensed / Source Sans 3",
+        "TanStack Query v5 + Zustand",
+        "React Hook Form + Zod",
+        "Recharts, Lucide React, Sonner",
+        "Express 5 + TypeScript",
+        "PostgreSQL (Neon) + Prisma 6 ORM",
+        "JWT (httpOnly cookie) + Passport Google/Facebook OAuth",
+        "Stripe Checkout + webhooks",
+        "Swagger / OpenAPI",
+        "Vercel (frontend + API)"
+      ],
+      "categories": [
+        "web",
+        "fullstack",
+        "expert"
+      ],
+      "creativity_score": 9,
+      "stars": 0,
+      "forks": 0,
+      "last_updated": "2026-08-28",
+      "is_private": false,
+      "readme_status": "good",
+      "featured": true,
+      "featured_order": 5,
+      "unique_aspects": "Complete rental loop with real mechanics — not a mock storefront. Three-role product (customer / provider / admin) with dedicated dashboards, Recharts analytics, and middleware/guarded routes. Auth via Next.js proxy route handlers storing JWT in httpOnly cookies; Stripe Checkout in test mode with webhook-driven order state (PLACED→CONFIRMED→PAID→PICKED_UP→RETURNED). 15 seeded gear items across 5 categories, 12 demo orders, and 7 demo accounts. Separate Vercel deployments for frontend and API with Neon Postgres and auto-generated Swagger docs.",
+      "main_features": [
+        "Public catalog with search, category/brand/rating/location filters and gear detail + reviews",
+        "Customer: rental booking, order history, Stripe Checkout (4242…), payment history, post-return reviews",
+        "Provider: inventory CRUD, availability toggles, incoming order management, 6-month revenue/status analytics",
+        "Admin: platform-wide analytics, user suspension, gear & rental moderation, category management",
+        "Auth: JWT httpOnly cookies, email/password + Google/Facebook OAuth, proxy-attached Bearer tokens",
+        "Deployed on Vercel (frontend + API) with Neon Postgres, Prisma migrations, and /api/docs Swagger"
+      ]
+    },
+    {
       "name": "valcor-group",
       "title": "Valcor Group — Private Security Firm Site",
       "description": "High-performance static site for a private security firm — converted from WordPress to pure static, hosted on Cloudflare Pages with Turnstile bot-protection and an interactive guard-pin satellite map.",
@@ -239,7 +286,7 @@
       "is_private": true,
       "readme_status": "good",
       "featured": true,
-      "featured_order": 5,
+      "featured_order": 6,
       "unique_aspects": "WordPress-to-static migration for a private security company — eliminates server costs, maximises uptime on Cloudflare's global CDN. Turnstile integration blocks bots without annoying CAPTCHAs. Interactive satellite map shows guard deployment pins for client transparency. Built for security firms needing a trustworthy, fast, low-maintenance web presence.",
       "main_features": [
         "WordPress-to-static conversion",
@@ -281,7 +328,7 @@
       "is_private": false,
       "readme_status": "good",
       "featured": true,
-      "featured_order": 6,
+      "featured_order": 7,
       "unique_aspects": "Real-time email triage agent using Gmail push (Pub/Sub) instead of polling — near-zero latency. Gemini handles classification and summarisation with a prompt-injection-safe system prompt design. Results land in Notion for structured review. Built for professionals drowning in email who want AI-curated inbox zero without giving up control.",
       "main_features": [
         "Gmail Pub/Sub push (no polling — real-time)",
@@ -321,7 +368,7 @@
       "is_private": false,
       "readme_status": "good",
       "featured": true,
-      "featured_order": 7,
+      "featured_order": 8,
       "unique_aspects": "Multimodal Gemini agent that understands both text and images in WhatsApp exports — not just text. Delivers a concise, structured daily digest so group members catch up in 30 seconds instead of scrolling hundreds of messages. Built for busy professionals in active group chats.",
       "main_features": [
         "WhatsApp chat export parsing (text + images)",
@@ -362,7 +409,7 @@
       "is_private": false,
       "readme_status": "good",
       "featured": true,
-      "featured_order": 8,
+      "featured_order": 9,
       "unique_aspects": "End-to-end automated cover letter pipeline for Upwork freelancers. FlareSolverr bypasses Cloudflare bot-protection to scrape job details; Gemini crafts a tailored, high-converting letter from the job description and a profile template. REST API makes it integrable with n8n/Make.com workflows. Built for freelancers who want to apply faster without sacrificing quality.",
       "main_features": [
         "Upwork job scraping via FlareSolverr (bot-bypass)",

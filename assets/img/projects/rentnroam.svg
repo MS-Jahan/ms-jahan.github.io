@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#ea580c"/>
+    </linearGradient>
+    <pattern id="dots" width="40" height="40" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.5" fill="rgba(255,255,255,0.08)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#g)"/>
+  <rect width="800" height="500" fill="url(#dots)"/>
+  <rect x="40" y="380" width="120" height="8" rx="4" fill="rgba(255,255,255,0.5)"/>
+  <rect x="40" y="400" width="200" height="6" rx="3" fill="rgba(255,255,255,0.3)"/>
+  <text x="40" y="210" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="38" font-weight="700" fill="#ffffff">RentNRoam — Gear Rental Marketplace</text>
+  <text x="40" y="250" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="16" fill="rgba(255,255,255,0.78)">Next.js 15 · Express 5 · Prisma 6 · Stripe · Neon · Vercel</text>
+  <text x="40" y="455" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13" fill="rgba(255,255,255,0.5)">sabit.dev — screenshot placeholder</text>
+</svg>
